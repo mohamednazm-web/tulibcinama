@@ -231,4 +231,7 @@ exports.getSeries = catchAsync(async (req, res, next) => {
     });
 });
 
-// test
+// git add app.js
+// git commit -m "changes"
+// git add -A
+// git push origin master
