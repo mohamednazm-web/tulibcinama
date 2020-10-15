@@ -1,0 +1,67 @@
+.posterTwo {
+    background-color: #0000000a;
+    grid-column: cover-start / cover-end;
+    border: 1px solid #2222220f;
+    border-top: 2px solid #399;
+    border-radius: 2px;
+    margin-bottom: 4rem;
+
+
+
+    &__title {
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+}
+
+.posters {
+    padding: 2rem;
+    grid-column: poster-start / poster-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-small-mobile) {
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        padding: 1rem;
+        grid-gap: 1rem;
+    }
+}
+
+.poster {
+
+    &__img {
+        width: 202px;
+        height: 305px;
+        transition: 1s ease;
+        border-radius: 2%;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 169px;
+            height: 235px;
+        }
+
+        @media only screen and (max-width: $bp-small-mobile) {
+            width: 120px;
+            height: 191px;
+        }
+    }
+
+    &__titleFilm {
+        text-align: center;
+        font-size: 1.4rem;
+        //letter-spacing: 2px; 
+    }
+
+    &:hover {
+        -webkit-filter: blur(2px);
+        transition: 1s ease;
+    }
+}

@@ -1,0 +1,27 @@
+$bp-largest: 75em; // 1200px;
+$bp-large: 62.5em; // 1000px;
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+$bp-mobile: 24em; // 375px;
+$bp-small-mobile: 22em; // 350px;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-grey-dark-1);
+    background-color: #F5F5F5;
+    line-height: 1.6;
+}

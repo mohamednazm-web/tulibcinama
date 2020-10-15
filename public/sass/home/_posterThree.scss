@@ -1,0 +1,59 @@
+.posterThree {
+    grid-column: cover-start / cover-end;
+    background-color: #0000000a;
+    border: 1px solid #2222220f;
+    border-top: 2px solid #399;
+    border-radius: 2px;
+    margin-bottom: 4rem;
+
+    &__title {
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+}
+
+.facts {
+    padding: 2rem;
+    grid-column: poster-start / poster-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    //grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0;
+    }
+
+    &__fact {
+        padding: 2rem;
+
+        &__img {
+            width: 416px;
+            height: 225px;
+            border-radius: 2%;
+
+            @media only screen and (max-width: $bp-largest) {
+                height: 194px;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                height: 166px;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                width: 370px;
+
+            }
+        }
+    }
+}

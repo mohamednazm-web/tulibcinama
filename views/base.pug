@@ -1,0 +1,129 @@
+doctype html
+html
+  head
+    block head
+     meta(charset='UTF-8')
+     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+     meta(http-equiv='X-UA-Compatible' content='ie=edge')
+     link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i' rel='stylesheet')
+     link(rel='stylesheet' href='/css/style.css')
+     link(rel='stylesheet' href='/css/stylee.css')
+     link(rel='stylesheet' href='/css/article.css') 
+     link(rel='shortcut icon' type='image/png' href='//img/favicon.png')
+     script(src='/js/modernizr.js')
+     // Modernizr
+     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+    
+  body.container
+
+    
+    .searchCover
+      header.cd-main-header
+        a.cd-logo(href="#0")
+          img(src="/img/logo.jpg" alt="Logo")
+        ul.cd-header-buttons
+          li
+            a.cd-search-trigger(href="#cd-search")
+              | Search
+              span
+          li
+            a.cd-nav-trigger(href="#cd-primary-nav")
+              | Menu
+              span
+      main.cd-main-content
+        block content
+          h2 hello
+        footer.footer
+          .holder-up
+            .holder-up__About
+              h6.holder-up__title سینەمای تولیپ
+              p.holder-up__paragraph.text-justify
+                | ڕێکخراوێکی سەربەخۆی ناحکومییە بەشێوەی مەیدانی و ئۆنڵاین لە بواری سینەمادا کاردەکات
+                | چالاکییە مەیدانییەکانمان بریتییە لە سیمینار، کۆڕ، پەخشکردنی فیلم، ناساندن و هتد...
+                | ئۆنڵاینەکانمان بریتییە لە کارکردنی ڕۆژانە لە پێگەکانمان  کە بریتین لە وێبسایتێک
+                | و پەیجێکی فەیسووک بۆ شیکردنەوە، هەواڵ، زانیاری، فاکت و هتد.
+            .holder-up__Categories
+              h6.holder-up__title بەشەکانی وێبسایتی سینەمای تولیپ
+              ul.holder-up__links
+                li
+                  a.holder-up__links-tag(href="#") C
+                li
+                  a.holder-up__links-tag(href="#") UI Design
+                li
+                  a.holder-up__links-tag(href="#") PHP
+                li
+                  a.holder-up__links-tag(href="#") Java
+                li
+                  a.holder-up__links-tag(href="#") Android
+                li
+                  a.holder-up__links-tag(href="#") Templates
+            .holder-up__quick
+              h6.holder-up__title زنجیرە
+              ul.holder-up__links
+                li
+                  a.holder-up__links-tag(href="#") About Us
+                li
+                  a.holder-up__links-tag(href="#") Contact Us
+                li
+                  a.holder-up__links-tag(href="#") Contribute
+                li
+                  a.holder-up__links-tag(href="#") Privacy Policy
+                li
+                  a.holder-up__links-tag(href="#") Sitemap
+          hr
+          .holder-down
+            p.holder-down__copyright
+              | Tulip Cinema © 2020 All Rights Reserved
+            ul.holder-down__icons
+              .effect.lavinia
+                .buttons
+                  a.fb(href="https://www.facebook.com/Tulip.Cinema" title="Join us on Facebook")
+                    i.fa.fa-facebook(aria-hidden="true")
+                  a.tw(href="#" title="Join us on Twitter")
+                    i.fa.fa-twitter(aria-hidden="true")
+                  a.insta(href="https://www.instagram.com/tulip.cinema/?igshid=b3p6uzyeofes" title="Join us on Instagram")
+                    i.fa.fa-instagram(aria-hidden="true")
+        .cd-overlay
+      nav.cd-nav
+        ul#cd-primary-nav.cd-primary-nav.is-fixed
+          
+              
+          
+          li
+            a(href="/profiles") پڕۆفایلەکان
+          li
+            a(href="/gift") خەڵاتەکان
+          li
+            a(href="/") چەمکەکان
+          li
+            a(href="/company") کۆمپانیاکان
+          li
+            a(href="/Top-250-movie-rated") باشترین ٢٥٠ فیلم
+          li
+            a(href="/") نواندنکاران
+          li
+            a(href="/director") دەرهێنەران
+          li
+            a(href="/chashn") چەشنەکان
+          li
+            a(href="/series") زنجیرە
+          li
+            a(href="/film") فیلم
+          li
+            a(href="/variety") هەمەجۆر
+          li
+            a(href="/") سەرەتا
+      #cd-search.cd-search
+        form
+          input#search.form-control.form-control-lg(type="text" placeholder="Search animals..")
+          #match-list.searchContainer
+
+      script(src="/js/search.js")
+      script(src="/js/jquery-2.1.1.js")
+      script(src="/js/jquery.mobile.custom.min.js")
+      script(src="/js/main.js")
+      // Resource jQuery
+
+
+    

@@ -1,0 +1,20 @@
+extends base
+
+block content
+  body.articleContainer
+    // Header
+    header.banner
+      span.background
+      h1.header= article.title
+    // Other stuff
+    main.mainContainer
+      article
+        h1.headerArticle= ` ${article.nameF}`
+        h1.headerArticle= `نوسینی: ${article.writingN}`
+        h1.headerArticle= `وەرگێڕانی: ${article.translator}`
+        - const parapraphs = article.description.split('\n');
+      each p in parapraphs
+        p.description__text= p
+
+
+    script(src="/js/article.js")

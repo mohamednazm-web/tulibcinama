@@ -1,0 +1,43 @@
+extends base
+
+block content
+    .swiper
+      .reklame رێکلام
+      .slider
+        .slides
+          input#radio1(type="radio" name="radio-btn")
+          input#radio2(type="radio" name="radio-btn")
+          input#radio3(type="radio" name="radio-btn")
+          input#radio4(type="radio" name="radio-btn")
+          .slide.first
+            a(href="/poster")
+              img(src="img/poster-1.png" alt="")
+          .slide
+           a(href="/poster")
+             img(src="img/poster-1.png" alt="")
+          .slide
+           a(href="/poster")
+             img(src="img/poster-1.png" alt="")
+          .slide
+           a(href="/poster")
+             img(src="img/poster-1.png" alt="")
+          .navigation-auto
+            .auto-btn1
+            .auto-btn2
+            .auto-btn3
+            .auto-btn4
+        .navigation-manual
+          label.manual-btn(for="radio1")
+          label.manual-btn(for="radio2")
+          label.manual-btn(for="radio3")
+          label.manual-btn(for="radio4")
+      script(src="js/swiper.js") type="text/javascript")
+      .reklame-2 ڕێکلام
+
+    include _posterOne
+
+    include _posterTwo
+
+    include _posterThree
+    
+    
