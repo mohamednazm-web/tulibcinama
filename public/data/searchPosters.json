@@ -1663,5 +1663,82 @@
     "photo": "",
     "writingN": "داریان جەمال",
     "nameF": "خۆشەویستی سەردەمی کۆلێرا ٢٠٠٧"   
+},
+{
+    "id": 139,
+    "p": 139,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "",
+    "typeVariety": "variety",
+    "memberNameEnglish": "mohamed-rzgar",
+    "title": "Tom Hanks in solders character",
+    "photo": "silly.jpg",
+    "writingN": "محەمەد ڕزگار",
+    "nameF": "تۆم هانکس لە ڕۆڵی سەربازەکاندا"
+},
+{
+    "id": 139,
+    "p": 139,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "",
+    "typeVariety": "variety",
+    "memberNameEnglish": "mohamed-rzgar",
+    "title": "Tom Hanks in solders character",
+    "photo": "silly.jpg",
+    "writingN": "محەمەد ڕزگار",
+    "nameF": "تۆم هانکس لە ڕۆڵی سەربازەکاندا"
+},
+{
+    "id": 140,
+    "p": 140,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "",
+    "typeVariety": "variety",
+    "memberNameEnglish": "mohamed-salar",
+    "title": "Meaning of colors",
+    "photo": "colors.jpg",
+    "writingN": "محەمەد سالار",
+    "nameF": "مانای ڕەنگەکان"   
+},
+{
+    "id": 141,
+    "p": 141,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "",
+    "typeVariety": "variety",
+    "memberNameEnglish": "mohamed-rzgar",
+    "title": "Why one of our choose must be Anime?",
+    "photo": "anime.jpg",
+    "writingN": "محەمەد ڕزگار",
+    "nameF": "بۆچی دەبێت یەکێک لە هەڵبژاردنەکانمان ئەنیمی بێت؟"
+},
+{
+    "id": 142,
+    "p": 142,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "director",
+    "memberNameEnglish": "mohamed-rzgar",
+    "title": "Akira Kurosawa",
+    "photo": "akira.jpg",
+    "writingN": "محەمەد ڕزگار",
+    "nameF": "ئاکیرا کورۆساوا‌"
+},
+{
+    "id": 143,
+    "p": 143,
+    "typeFilm": "",
+    "typeTop": "",
+    "typeDirector": "",
+    "typeVariety": "variety",
+    "memberNameEnglish": "mohamed-rzgar",
+    "title": "Making film with smartphones",
+    "photo": "phone movie.jpg",
+    "writingN": "محەمەد ڕزگار",
+    "nameF": "دروستکردنی فیلم بە مۆبایلی زیرەک"   
 }
 ]
