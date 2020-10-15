@@ -73,7 +73,7 @@ exports.getProfiles = catchAsync(async (req, res, next) => {
     if (!profile) {
         return next(new AppError('There is no profile with that name.', 404));
     }
-
+ 
     // 2) Build template
     // 3) Render template using data from 1)
     res.status(200).render('profile', {
