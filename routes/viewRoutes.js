@@ -30,4 +30,5 @@ router.get('/chashn', viewsController.getChashn);
 router.get('/series', viewsController.getSeries);
 
 
+
 module.exports = router;

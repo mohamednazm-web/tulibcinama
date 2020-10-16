@@ -28,10 +28,10 @@ const posterSchema = new mongoose.Schema({
     typeGift: {
         type: String
     },
-    typeChashn: {
+    typeSeries: {
         type: String
     },
-    typeSeries: {
+    typeChashn: {
         type: String
     },
     slug: String,
