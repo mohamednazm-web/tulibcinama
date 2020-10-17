@@ -462,9 +462,9 @@ body {
 }
 
 @media only screen and (max-width: 28.75em) {
-  .navigation-auto {
-    width: 46rem;
-    margin-top: 23rem;
+  .navigation-manual {
+    width: 41rem;
+    margin-top: -27rem;
   }
 }
 
@@ -541,6 +541,13 @@ body {
   .navigation-auto {
     width: 52rem;
     margin-top: 30rem;
+  }
+}
+
+@media only screen and (max-width: 28.75em) {
+  .navigation-auto {
+    width: 41rem;
+    margin-top: 23rem;
   }
 }
 
