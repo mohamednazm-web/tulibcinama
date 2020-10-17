@@ -25,7 +25,7 @@ mongoose
 
 
 
-const port = process.env.PORT || 8000; // no internet
+const port = process.env.PORT || 3000; // no internet
 app.listen(port, () => {
   console.log(`App runinig on port ${port}`);
 });
