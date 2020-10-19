@@ -5,12 +5,7 @@ const AppError = require('../utils/appError');
 
 exports.posters = catchAsync(async (req, res, next) => {
     // 1) Get tour data from collection
-    const posterOne = await AllPosters.find({
-        p: {
-            $gte: 0,
-            $lte: 13
-        }
-    });
+    const posterOne = await AllPosters.find().limit(5);
     const posterTwo = await AllPosters.find({
         p: {
             $gt: 13,
@@ -19,6 +14,13 @@ exports.posters = catchAsync(async (req, res, next) => {
         typeVariety: {
             $eq: "variety"
         }*/
+
+       /* {
+            p: {
+                $gte: 0,
+                $lte: 13
+            }
+        } */
     });
 
     
