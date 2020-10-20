@@ -271,12 +271,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 802px) {
   .reklame img {
     height: 0;
   }
 }
-
 
 .reklame-2 img {
   height: 40rem;
@@ -294,10 +293,26 @@ body {
   }
 }
 
-@media only screen and (max-width: 569px) {
+@media only screen and (max-width: 596px) {
   .reklame-2 img {
     height: 26rem;
     width: 58rem;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .reklame-2 img {
+    height: 22rem;
+    width: 38rem;
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .reklame-2 img {
+    height: 22rem;
+    width: 382px;
+    margin-left: 23px;
   }
 }
 
