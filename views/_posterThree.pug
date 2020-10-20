@@ -1,0 +1,12 @@
+section.posterOne
+    .posterOne__title(href="#")
+        p ئەندامەکان
+    .app
+      ul.hs
+        each p in profile
+             li.item
+              a.pro(href=`/member/${p.slugMember}`)
+                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="Poster 1")
+                  .realtors__details
+                    p.realkljtors__sold= p.memberName
+                    h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`
