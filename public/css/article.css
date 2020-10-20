@@ -40,7 +40,9 @@ body.loaded {
     top: 0;
     z-index: -1;
     transform: translate3d(0, 0, 0) scale(1.25);
-    background: black url(/img/poster-1.png) no-repeat center center;
+
+    background: black no-repeat center center;
+
     background-size: cover;
 }
 
