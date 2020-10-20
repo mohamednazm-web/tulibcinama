@@ -259,6 +259,10 @@ body {
   height: 40rem;
 }
 
+.reklame-2 img {
+  height: 40rem;
+}
+
 @media only screen and (max-width: 1167px) {
   .reklame img {
     height: 35rem;
@@ -267,6 +271,18 @@ body {
 
 @media only screen and (max-width: 995px) {
   .reklame img {
+    height: 33rem;
+  }
+}
+
+@media only screen and (max-width: 1167px) {
+  .reklame-2 img {
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .reklame-2 img {
     height: 33rem;
   }
 }
@@ -277,76 +293,40 @@ body {
   }
 }
 
-.reklame-2 img {
-  height: 40rem;
-}
-
-@media only screen and (max-width: 1167px) {
+@media only screen and (max-width: 802px) {
   .reklame-2 img {
-    height: 35rem;
+    height: 0;
   }
 }
 
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 802px) {
   .reklame-2 img {
-    height: 33rem;
+    height: 0;
   }
 }
 
-@media only screen and (max-width: 596px) {
+@media only screen and (max-width: 600px) {
   .reklame-2 img {
-    height: 26rem;
-    width: 58rem;
+    height: 25rem;
+    width: 60rem;
   }
 }
 
-@media only screen and (max-width: 596px) {
-  .reklame-2 img {
-    height: 22rem;
-    width: 38rem;
-    margin-left: 4rem;
-  }
-}
-
-@media only screen and (max-width: 384px) {
+@media only screen and (max-width: 385px) {
   .reklame-2 img {
     height: 18rem;
-    width: 341px;
-    margin-left: 12px;
+    width: 39rem;
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 376px) {
   .reklame-2 img {
-    height: 22rem;
-    width: 382px;
-    margin-left: 23px;
+    height: 14rem;
+    width: 36rem
   }
 }
 
-@media only screen and (max-width: 362px) {
-  .reklame-2 img {
-    height: 18rem;
-    width: 341px;
-    margin-left: 1px;
-  }
-}
 
-@media only screen and (max-width: 362px) {
-  .reklame-2 img {
-    height: 18rem;
-    width: 295px;
-    margin-left: 18px;
-  }
-}
-
-@media only screen and (max-width: 436px) {
-  .reklame-2 img {
-    height: 22rem;
-    width: 381px;
-    margin-left: 28px;
-  }
-}
 
 
 .slider {
@@ -672,7 +652,6 @@ body {
   border-top: 2px solid #399;
   border-radius: 2px;
   margin-bottom: 4rem;
-  margin-top: 10rem;
 }
 
 .posterOne__title {
