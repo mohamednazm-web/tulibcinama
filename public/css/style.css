@@ -1005,6 +1005,12 @@ hr {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .pros {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
+
 .pro {
   display: grid;
   align-content: center;
