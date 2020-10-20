@@ -340,11 +340,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 362px) {
+@media only screen and (max-width: 436px) {
   .reklame-2 img {
-    height: 18rem;
-    width: 295px;
-    margin-left: 18px;
+    height: 22rem;
+    width: 381px;
+    margin-left: 28px;
   }
 }
 
