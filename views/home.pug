@@ -2,7 +2,9 @@ extends base
 
 block content
     .swiper
-      .reklame رێکلام
+      .reklame 
+        a(href="/poster")
+          img(src="/img/mamuZin.jpg" alt="")
       .slider
         .slides
           input#radio1(type="radio" name="radio-btn")
@@ -33,6 +35,8 @@ block content
           label.manual-btn(for="radio4")
       script(src="js/swiper.js") type="text/javascript")
       .reklame-2 ڕێکلام
+        a(href="/poster")
+          img(src="/img/mamuZin.jpg" alt="")
 
     include _posterOne
 
