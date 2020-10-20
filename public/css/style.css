@@ -489,6 +489,7 @@ body {
   }
 }
 
+
 .manual-btn {
   border: 2px solid #40D3DC;
   padding: 5px;
@@ -998,6 +999,12 @@ hr {
   grid-gap: 2rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .pros {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+
 .pro {
   display: grid;
   align-content: center;
@@ -1021,6 +1028,15 @@ hr {
   display: block;
   border: solid #339A99 2px;
 }
+
+@media only screen and (max-width: 37.5em) {
+  .pro__img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+
 
 .pro__sold {
   text-transform: uppercase;

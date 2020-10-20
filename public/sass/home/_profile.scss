@@ -51,6 +51,11 @@
         border-radius: 50%;
         display: block;
         border: solid #339A99 2px;
+
+        @media only screen and (max-width: $bp-small) {
+            height: 15rem;
+            width: 15rem;
+        }
     }
 
     &__sold {
