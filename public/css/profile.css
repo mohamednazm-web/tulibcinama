@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 24.0625em) {
     .hs {
-        grid-template-columns: repeat(1000, calc(65% - var(--gutter) * 2));
+        grid-template-columns: repeat(1000, calc(67% - var(--gutter) * 2));
     }
 }
 
