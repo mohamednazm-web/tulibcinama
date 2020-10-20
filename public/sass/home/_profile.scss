@@ -64,6 +64,11 @@
             height: 15rem;
             width: 15rem;
         }
+
+        @media only screen and (max-width: $bp-small-2) {
+            height: 12rem;
+            width: 12rem;
+        }
     }
 
     &__sold {
