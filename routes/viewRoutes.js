@@ -29,6 +29,8 @@ router.get('/chashn', viewsController.getChashn);
 
 router.get('/series', viewsController.getSeries);
 
+router.get('/chamkakan', viewsController.getChamkakan);
+
 
 
 module.exports = router;

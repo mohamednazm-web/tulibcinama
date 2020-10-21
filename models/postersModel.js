@@ -34,6 +34,9 @@ const posterSchema = new mongoose.Schema({
     typeChashn: {
         type: String
     },
+    typeChamkakan: {
+        type: String
+    },
     slug: String,
     photo: {
         type: String,

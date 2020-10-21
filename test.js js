@@ -2,14 +2,15 @@
     {   
         "id": 153,
         "p": 153,
-        "typeFilm": "film",
-        "typeTop": "top",
+        "typeFilm": "",
+        "typeTop": "",
         "typeDirector": "",
-        "memberNameEnglish": "juana-haziz",
+        "typeChamkakan": "chamkakan",
+        "memberNameEnglish": "bynay-sabar",
         "title": "",
         "photo": "",
-        "writingN": "ڕۆجەر ئیبێرت", 
+        "writingN": "بینایی سەبار", 
         "nameF": "",  
         "description": "",
-        "translator": "جوانە عەزیز"
+        "translator": " "
     }
