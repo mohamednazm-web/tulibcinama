@@ -810,7 +810,9 @@ hr.beautiful-line {
 
 .developer {
   color: #869fb2;
+  text-decoration: underline;
 }
+
 
 .poster__link {
   list-style: none;
@@ -1095,6 +1097,19 @@ hr {
   grid-template-columns: repeat(3, 7rem);
   justify-content: end;
   margin-right: -3.7rem;
+}
+
+
+@media only screen and (max-width: 415px) {
+  .effect .buttons {
+    margin-right: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .effect .buttons {
+    margin-right: 0.3rem;
+  }
 }
 
 /* styles for a common effect !!!YOU NEED THEM */
