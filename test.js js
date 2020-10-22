@@ -1,17 +1,15 @@
 ,
-    {   
-        "id": 153,
-        "p": 153,
-        "typeFilm": "",
+    {
+        "id": 67,
+        "p": 67,
+        "typeFilm": "film",
         "typeTop": "",
-        "typeDirector": "",
-        "typeChamkakan": "",
-        "typeGift": "gift",
-        "memberNameEnglish": "",
+        "typeVariety": "",
+        "typeCompany": "",
+        "memberNameEnglish": "ali-jaf",
         "title": "",
         "photo": "",
-        "writingN": " ", 
-        "nameF": "",  
-        "description": "",
-        "translator": "شاد"
+        "writingN": "عەلی جاف",
+        "nameF": "",
+        "description": ""
     }

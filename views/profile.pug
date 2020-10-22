@@ -11,3 +11,9 @@ block content
                   .realtors__details
                     p.realkljtors__sold= p.memberName
                     h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`
+            each p in profile
+                a.pro(href=`/member/${p.slugMember}`)
+                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="Poster 1")
+                  .realtors__details
+                    p.realkljtors__sold= p.memberName
+                    h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`
