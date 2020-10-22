@@ -5,29 +5,30 @@ block content
       p پرۆفایلەکان
     section.profiles
         .profiles__title(href="#")
-          p دروستکەر و دیزاینەری وێبسایت
+          p 
         .pros
-            each p in profile
-                a.pro(href=`/member/${p.slugMember}`)
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="Poster 1")
+            each p in developer
+                a.pro(href="https://web.facebook.com/mohamedmohamed.nazmnazm/")
+                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook")
                   .realtors__details
                     p.realkljtors__sold= p.memberName  
+                    h4.heading-4.heading-4--light دروستکەر و دیزاینەری وێبسایت
     section.profiles
         .profiles__title(href="#")
           p نەخشاندنی پۆستەرەکان لەلایەن
         .pros
-            each p in profile
-                a.pro(href=`/member/${p.slugMember}`)
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="Poster 1")
+            each p in naxshandn
+                a.pro()
+                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="")
                   .realtors__details
                     p.realkljtors__sold= p.memberName
     section.profiles
         .profiles__title(href="#")
-          p وەڕگێران و نووسین بۆ فیلم و زنجيرەکان لەلایەن
-        .pros
+          p وەرگێڕ و نووسەرەکان
+        .pros 
             each p in profile
                 a.pro(href=`/member/${p.slugMember}`)
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="Poster 1")
+                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="")
                   .realtors__details
                     p.realkljtors__sold= p.memberName
                     h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`    

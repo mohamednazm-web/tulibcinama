@@ -12,7 +12,10 @@ const posterSchema = new mongoose.Schema({
         unique: true
     },
     typeNaxshandn: {
-        type: String,
+        type: String
+    },
+    typeDeveloper: {
+        type: String
     },
     memberNameEnglish: {
         type: String

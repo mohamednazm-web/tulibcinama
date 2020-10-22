@@ -376,5 +376,15 @@
         "description": "",
         "imageProfile": "valan.jpg",
         "numOfPosters": 5
+    },
+    {
+        "m": "50",
+        "memberName": "محەمەد ناظم",
+        "memberNameEnglish": "mohamed nazm",
+        "typeNaxshandn": "naxshandn",
+        "typeDeveloper": "developer",
+        "description": "",
+        "imageProfile": "mohamed-nazm.jpg",
+        "numOfPosters": 5
     }
 ]
