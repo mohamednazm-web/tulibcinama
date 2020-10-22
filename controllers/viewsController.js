@@ -11,21 +11,10 @@ exports.posters = catchAsync(async (req, res, next) => {
         }
     }).limit(14);
     const posterTwo = await AllPosters.find({
-        p: {
-            $gt: 13,
-            $lte: 20
-        }/*,
         typeVariety: {
             $eq: "variety"
-        }*/
-
-       /* {
-            p: {
-                $gte: 0,
-                $lte: 13
-            }
-        } */
-    });
+        }
+    }).limit(7);
 
     const profile = await Profile.find({
         numOfPosters: {
