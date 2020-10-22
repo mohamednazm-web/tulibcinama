@@ -801,6 +801,13 @@ hr.beautiful-line {
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 361px) {
+  .poster__titleFilm {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
 .poster__link {
   list-style: none;
   text-decoration: none;
