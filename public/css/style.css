@@ -808,6 +808,10 @@ hr.beautiful-line {
   }
 }
 
+.developer {
+  color: #869fb2;
+}
+
 .poster__link {
   list-style: none;
   text-decoration: none;
