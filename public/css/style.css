@@ -261,6 +261,10 @@ body {
   }
 }
 
+.rek img {
+  height: 0;
+}
+
 .reklame img {
   height: 40rem;
 }
