@@ -371,6 +371,16 @@ hr.beautiful-line {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .reklame-2 img {
+    height: 14rem;
+    width: 41rem;
+    padding: 0 2rem;
+  }
+}
+
+
+
 @media only screen and (max-width: 385px) {
   .reklame-2 img {
     height: 18rem;
@@ -392,6 +402,14 @@ hr.beautiful-line {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .reklame img {
+    height: 14rem;
+    width: 41rem;
+    padding: 0 2rem;
+  }
+}
+
 @media only screen and (max-width: 384px) {
   .reklame img {
     height: 17rem;
@@ -408,6 +426,13 @@ hr.beautiful-line {
 @media only screen and (max-width: 376px) {
   .reklame {
     padding: 37rem 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .reklame img {
+    height: 14rem;
+    width: 36rem;
   }
 }
 
