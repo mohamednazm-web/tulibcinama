@@ -138,14 +138,12 @@ Main components
 
 .cd-logo img {
   display: block;
-  height: 44px;
-
-
+  height: 54px;
 }
 
 @media only screen and (max-width: 1200px) {
   .cd-logo img {
-    height: 32px;
+    height: 34px;
   }
 }
 

@@ -267,6 +267,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 435px) {
+  .rek img {
+    height: 16rem;
+    width: 44rem;
+  }
+}
+
 @media only screen and (max-width: 385px) {
   .rek img {
     height: 14rem;
