@@ -398,6 +398,10 @@ body {
   display: none;
 }
 
+.rek img {
+  height: 0;
+}
+
 .slide {
   width: 20%;
   transition: 2s;
