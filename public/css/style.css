@@ -257,12 +257,19 @@ body {
 
 @media only screen and (max-width: 385px) {
   .swiper {
-    margin-bottom: 27rem;
+    margin-bottom: 21rem;
   }
 }
 
 .rek img {
   height: 0;
+}
+
+@media only screen and (max-width: 385px) {
+  .rek img {
+    height: 14rem;
+    width: 36rem;
+  }
 }
 
 .reklame img {
