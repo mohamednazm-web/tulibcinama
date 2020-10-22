@@ -275,13 +275,13 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 384px) {
   .swiper {
-    margin-bottom: 27rem;
+    margin-bottom: 22rem;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .swiper {
-    margin-bottom: 22rem;
+    margin-bottom: 18rem;
   }
 }
 
@@ -368,6 +368,7 @@ hr.beautiful-line {
   .reklame-2 img {
     height: 25rem;
     width: 60rem;
+    padding: 0 2rem;
   }
 }
 
@@ -383,8 +384,8 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 385px) {
   .reklame-2 img {
-    height: 18rem;
-    width: 39rem;
+    height: 15rem;
+    width: 37rem;
   }
 }
 
@@ -399,6 +400,7 @@ hr.beautiful-line {
   .reklame img {
     height: 18rem;
     width: 60rem;
+    padding: 0 2rem;
   }
 }
 
@@ -419,7 +421,7 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 384px) {
   .reklame {
-    padding: 41rem 0;
+    padding: 38rem 0;
   }
 }
 
