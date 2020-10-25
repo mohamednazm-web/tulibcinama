@@ -31,6 +31,8 @@ router.get('/series', viewsController.getSeries);
 
 router.get('/chamkakan', viewsController.getChamkakan);
 
+router.get('/actor', viewsController.getActor);
+
 
 
 module.exports = router;

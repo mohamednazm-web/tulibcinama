@@ -46,6 +46,9 @@ const posterSchema = new mongoose.Schema({
     memberNameEnglish: {
         type: String
     },
+    typeActor: {
+        type: String
+    },
     writingN: {
         type: String
     },

@@ -271,6 +271,22 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
     });
 });
 
+exports.getActor = catchAsync(async (req, res, next) => {
+    // 1) Get tour data from collection
+    const actor = await AllPosters.find({
+        typeActor: {
+            $eq: "actor"
+        }
+    });
+
+    // 2) Build template
+    // 3) Render that template using tour data from 1)
+    res.status(200).render('actor', {
+        title: 'actor',
+        actor
+    });
+});
+
 // git add app.js
 // git commit -m "changes"
 // git add -A
