@@ -534,7 +534,7 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 461px) {
   .slider {
-    width: 45rem;
+    width: 40rem;
     height: 20rem;
     margin-top: -2rem;
   }
@@ -666,7 +666,7 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 461px) {
   .slide img {
-    width: 45rem;
+    width: 40rem;
     height: 20rem;
   }
 }
