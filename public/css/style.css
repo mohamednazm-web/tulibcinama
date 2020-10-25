@@ -416,18 +416,18 @@ hr.beautiful-line {
   .reklame img {
     height: 14rem;
     width: 21.5rem;
-    margin-bottom: -32rem;
+    margin-bottom: -33.6rem;
     margin-left: 16.5rem;
   }
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   .reklame img {
     height: 14rem;
     width: 21.5rem;
-    margin-bottom: -32.1rem;
-    margin-left: 16rem;
+    margin-bottom: -32rem;
+    margin-left: 16.5rem;
   }
 }
 
