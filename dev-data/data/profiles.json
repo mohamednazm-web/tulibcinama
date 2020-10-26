@@ -170,10 +170,10 @@
     {
         "m": "22",
         "memberName": "موستەفا سادق",
-        "memberNameEnglish": "mwstafa sadq",
+        "memberNameEnglish": "mustafa sadq",
         "description": "",
-        "imageProfile": "realtor-2.jpeg",
-        "numOfPosters": 0
+        "imageProfile": "mustafa-sadq.jpg",
+        "numOfPosters": 16
     }, {
         "m": "23",
         "memberName": "جوانە عەزیز",
@@ -387,13 +387,5 @@
         "imageProfile": "mohamed-nazm.jpg",
         "numOfPosters": 0
     }
-    ,
-    {
-        "m": "51",
-        "memberName": "موستەفا سادق",
-        "memberNameEnglish": "mustafa sadq",
-        "description": "",
-        "imageProfile": "mustafa-sadq.jpg",
-        "numOfPosters": 16
-    }
+    
 ]
