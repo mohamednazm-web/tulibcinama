@@ -1,8 +1,6 @@
-/* -------------------------------- 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
-Primary style
-
--------------------------------- */
 *,
 *::after,
 *::before {
@@ -666,15 +664,16 @@ Main components
     /* main navigation buttons style */
     height: 43px;
     line-height: 44px;
-    color: #2e3233;
+    color: #000;
     border-bottom: none;
+    font-family: 'Oswald', sans-serif;
     transition: color 0.3s, box-shadow 0.3s;
-    font-size: 16.4px;
-    font-weight: 500;
-    background-color: #eee;
+    font-size: 17px;
     margin-top: 1.8rem;
     padding: 0 1rem;
     border-radius: 14%;
+    font-weight: bold;
+    opacity: .8;
   }
 
   .cd-primary-nav>li>a:hover {
