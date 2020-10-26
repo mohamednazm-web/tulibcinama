@@ -8,7 +8,7 @@
     "start": "node server.js ",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
     "dev": "nodemon server.js",
-    "dev3": "npm-run-all --parallel devserver watch:sass",
+    "dev2": "npm-run-all --parallel devserver watch:sass",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
@@ -57,7 +57,10 @@
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.17.0",
     "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3"
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
   },
   "engines": {
     "node": ">=10.0.0"
