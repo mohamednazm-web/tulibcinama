@@ -142,6 +142,36 @@ Main components
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .cd-logo img {
+    height: 41px;
+  }
+}
+
+
+@media only screen and (max-width: 415px) {
+  .cd-main-header {
+    height: 61px;
+    background: #ffffff;
+    z-index: 3;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .cd-logo img {
+    height: 37px;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .cd-main-header {
+    height: 54px;
+    background: #ffffff;
+    z-index: 3;
+  }
+}
+
 @media only screen and (max-width: 1169px) {
   .nav-on-left .cd-logo {
     left: auto;
