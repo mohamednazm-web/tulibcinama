@@ -8,7 +8,7 @@ const searchStates = async searchText => {
     let matches = states.filter(state => {
         const regex = new RegExp(`^${searchText}`, 'gi');
               
-        return state.title.toLowerCase().match(regex) || state.nameF.match(regex);
+        return state.title.match(regex) || state.nameF.match(regex);
     });
     if (searchText.length === 0) {
         matches = [];
