@@ -1,0 +1,9 @@
+extends base
+
+block content
+    .container(style="padding:50px 250px;")
+      form(role="form")
+        .form-group
+          input#txt-search.form-control.input-lg(type="input" placeholder="Type your search character")
+      #filter-records
+      script(src="/js/search.js")
