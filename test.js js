@@ -1,18 +1,33 @@
 ,
-    {
-        "id": 184,
-        "p": 184,
+    {   
+        "id": 152,
+        "p": 152,
         "typeFilm": "",
         "typeTop": "",
-        "typeVariety": "",
-        "typeCompany": "",
-        "memberNameEnglish": "mustafa-sadq",
+        "typeDirector": "",
+        "memberNameEnglish": "pola-fazl",
         "title": "",
         "photo": "",
-        "writingN": "موستەفا سادق",
-        "nameF": "",
+        "writingN": "پۆڵا فازڵ", 
+        "nameF": "",  
         "description": "\n",
         "translator": "..."
+    }
+
+,
+    {   
+        "id": 152,
+        "p": 152,
+        "typeFilm": "",
+        "typeTop": "",
+        "typeDirector": "",
+        "memberNameEnglish": "usra-yasin",
+        "title": "",
+        "photo": "",
+        "writingN": "ڕۆجەر ئیبێرت", 
+        "nameF": "",  
+        "description": "\n",
+        "translator": "یوسڕا یاسین"
     }
 
 
