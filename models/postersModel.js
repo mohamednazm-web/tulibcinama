@@ -12,6 +12,9 @@ const posterSchema = new mongoose.Schema({
     typeFilm: {
         type: String,
     },
+    typeFilmNew: {
+        type: String
+    },
     typeTop: {
         type: String,
     },

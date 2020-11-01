@@ -6,8 +6,9 @@ const AppError = require('../utils/appError');
 exports.posters = catchAsync(async (req, res, next) => {
     // 1) Get tour data from collection
     const posterOne = await AllPosters.find({
-        typeFilm: {
-            $eq: "film"
+        typeFilmNew: {
+            //$eq: "film"
+            $eq: "new"
         }
     }).limit(14);
     const posterTwo = await AllPosters.find({
@@ -286,8 +287,6 @@ exports.getActor = catchAsync(async (req, res, next) => {
         actor
     });
 });
-
-
 
 // git add app.js
 // git commit -m "changes"
