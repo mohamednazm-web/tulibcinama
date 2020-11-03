@@ -23,7 +23,7 @@ exports.posters = catchAsync(async (req, res, next) => {
             $gte: 5
         }
     })//////////////////////////
-    
+
 
 
     // 2) Build template
