@@ -3,7 +3,7 @@ const Profile = require('../models/profilesModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
-
+// heloo
 exports.posters = catchAsync(async (req, res, next) => {
     // 1) Get tour data from collection
     const posterOne = await AllPosters.find({
