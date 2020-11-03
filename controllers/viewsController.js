@@ -3,6 +3,7 @@ const Profile = require('../models/profilesModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
+
 exports.posters = catchAsync(async (req, res, next) => {
     // 1) Get tour data from collection
     const posterOne = await AllPosters.find({
@@ -287,6 +288,24 @@ exports.getActor = catchAsync(async (req, res, next) => {
         actor
     });
 });
+
+
+exports.createPoster = catchAsync(async (req, res, next) => {
+    // using try and catch beacuse we have async and await
+    //const newTour = new Tour({});
+    //newTour.save();
+
+    const doc = await AllPosters.create(req.body);
+
+    res.status(201).json({
+        // 201 stands for to create new tour
+        status: 'success',
+        data: {
+            data: doc
+        }
+    });
+});
+
 
 // git add app.js
 // git commit -m "changes"

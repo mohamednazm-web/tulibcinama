@@ -1,35 +1,15 @@
 ,
-    {   
-        "id": 152,
-        "p": 152,
-        "typeFilm": "",
-        "typeTop": "",
-        "typeDirector": "",
-        "memberNameEnglish": "hiwa-sahid",
+    {
+        "id": 8,
+        "p": 8,
+        "typeFilm": "film",
+        "memberNameEnglish": "ramyar-mohamed",
         "title": "",
         "photo": "",
-        "writingN": "هیوا سەعید", 
-        "nameF": "",  
-        "description": "\n",
-        "translator": "..."
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "",
+        "description": ""
     }
-
-,
-    {   
-        "id": 152,
-        "p": 152,
-        "typeFilm": "",
-        "typeTop": "",
-        "typeDirector": "",
-        "memberNameEnglish": "usra-yasin",
-        "title": "",
-        "photo": "",
-        "writingN": "ڕۆجەر ئیبێرت", 
-        "nameF": "",  
-        "description": "\n",
-        "translator": "یوسڕا یاسین"
-    }
-
 
 
     ,
