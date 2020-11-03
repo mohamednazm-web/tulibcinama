@@ -22,7 +22,8 @@ exports.posters = catchAsync(async (req, res, next) => {
         numOfPosters: {
             $gte: 5
         }
-    })
+    })//////////////////////////
+    
 
 
     // 2) Build template
