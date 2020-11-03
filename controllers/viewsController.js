@@ -306,6 +306,10 @@ exports.createPoster = catchAsync(async (req, res, next) => {
     });
 });
 
+// to change your remote to other existing remote using this steps
+// git remote -v
+// git remote set-url origin https://github.com/mohamednazm-web/tulibcinama.git
+//git push -f origin master
 
 // git add app.js
 // git commit -m "changes"
