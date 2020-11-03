@@ -2980,5 +2980,137 @@
         "writingN": "هیوا سەعید", 
         "nameF": "گەنج و جوان ٢٠١٣",  
         "translator": "..."
+    },
+    {
+        "id": 247,
+        "p": 247,
+        "typeDirector": "director",
+        "memberNameEnglish": "heshw-fatih",
+        "title": "Quentin Tarantino",
+        "photo": "QuentinTarantino.png",
+        "writingN": "هێشوو فاتیح",
+        "nameF": "کوێنتین تارانتینۆ",
+        "translator": "..."
+    },
+    {
+        "id": 248,
+        "p": 248,
+        "typeDirector": "director",
+        "memberNameEnglish": "heshw-fatih",
+        "title": "Bela Tarr",
+        "photo": "BelaTarr.png",
+        "writingN": "هێشوو فاتیح",
+        "nameF": "بێلاتار",
+        "translator": "..."
+    },
+    {
+        "id": 249,
+        "p": 249,
+        "typeDirector": "director",
+        "memberNameEnglish": "ramyar-mohamed",
+        "title": "quentin Tarantino",
+        "photo": "QuentinTarantino.jpg",
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "کوێنتن تارانتینۆ",
+        "translator": "..."
+    },
+    {
+        "id": 250,
+        "p": 250,
+        "typeFilm": "film",
+        "memberNameEnglish": "ramyar-mohamed",
+        "title": "Once upon a time in Hollywood 2019",
+        "photo": "onceuponatimeinhollywood.jpg",
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "سەردەمانێك لە هۆڵیود ٢٠١٩"
+    },
+    {
+        "id": 251,
+        "p": 251,
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "ramyar-mohamed",
+        "title": "‏The truman Show 1998",
+        "photo": "trumanshow.jpg",
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "بەرنامەی تەلەفزیۆنی ترومان ١٩٩٨"
+    },
+    {
+        "id": 252,
+        "p": 252,
+        "typeFilm": "film",
+        "memberNameEnglish": "ramyar-mohamed",
+        "title": "‏The physician 2013",
+        "photo": "thephysician.jpg",
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "پزیشکەکە ٢٠١٣"
+    },
+    {
+        "id": 253,
+        "p": 253,
+        "typeFilm": "film",
+        "memberNameEnglish": "ramyar-mohamed",
+        "title": "‏Midnight in Paris 2011",
+        "photo": "midnightinparis.jpg",
+        "writingN": "ڕامیار موحەممەد",
+        "nameF": "نیوەشەو لە پاریس ٢٠١١"
+    },
+    {
+        "id": 254,
+        "p": 254,
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "shara-mustafa",
+        "title": "Taxi driver 1976",
+        "photo": "Taxidriver1976.jpg",
+        "writingN": "شارا موستەفا",
+        "nameF": "شۆفێری تەکسی ١٩٧٦",
+        "translator": "..."
+    },
+    {
+        "id": 255,
+        "p": 255,
+        "typeFilm": "film",
+        "memberNameEnglish": "shara-mustafa",
+        "title": "The lobster 2015",
+        "photo": "Thelobster2015.jpg",
+        "writingN": "شارا موستەفا",
+        "nameF": "قرژاڵەکە ٢٠١٥",
+        "translator": "..."
+    },
+    {
+        "id": 256,
+        "p": 256,
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "shara-mustafa",
+        "title": "Requiem for a Dream 2000",
+        "photo": "RequiemforaDream2000.jpg",
+        "writingN": "شارا موستەفا",
+        "nameF": "ماتەمینی بۆ خەونێک ٢٠٠٠",
+        "translator": "..."
+    },
+    {
+        "id": 257,
+        "p": 257,
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "shara-mustafa",
+        "title": "Persona (1966)",
+        "photo": "Persona(1966)2.jpg",
+        "writingN": "شارا موستەفا",
+        "nameF": "ڕووپۆش ١٩٦٦",
+        "translator": "..."
+    },
+    {
+        "id": 258,
+        "p": 258,
+        "typeFilm": "film",
+        "memberNameEnglish": "shara-mustafa",
+        "title": "Her 2013",
+        "photo": "Her2013.jpg",
+        "writingN": "شارا موستەفا",
+        "nameF": "ئەو ٢٠١٣",
+        "translator": "..."
     }
 ]
