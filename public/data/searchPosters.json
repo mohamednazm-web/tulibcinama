@@ -3110,41 +3110,7 @@
         "title": "Her 2013",
         "photo": "Her2013.jpg",
         "writingN": "شارا موستەفا",
-        "nameF": "ئەو ٢٠١٣"
-    },
-    {
-        "id": 259,
-        "p": 259,
-        "memberNameEnglish": "hawre-kamal",
-        "typeSeries": "series",
-        "title": "Rick and Morty",
-        "photo": "RickAndMorty.jpg"
-    },
-    {
-        "id": 260,
-        "p": 260,
-        "memberNameEnglish": "hawre-kamal",
-        "typeFilm": "film",
-        "typeTop": "top",
-        "title": "Stalker 1979",
-        "photo": "stalker1979.jpg",
-        "writingN": "هاوڕێ کەمال"
-    },
-    {
-        "id": 261,
-        "p": 261,
-        "typeSeries": "series",
-        "memberNameEnglish": "hawre-kamal",
-        "title": "Sense8 2015-2018",
-        "photo": "sense8.png"
-    },
-    {
-        "id": 262,
-        "p": 262,
-        "memberNameEnglish": "hawre-kamal",
-        "typeFilm": "film",
-        "typeSeries": "series",
-        "title": "The Purge",
-        "photo": "thepurge.jpg"
+        "nameF": "ئەو ٢٠١٣",
+        "translator": "..."
     }
 ]
