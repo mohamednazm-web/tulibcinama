@@ -11,10 +11,11 @@ block content
       article
         h1.headerArticle= ` ${article.nameF}`
         h1.headerArticle= `نوسینی: ${article.writingN}`
-        h1.headerArticle= `وەرگێڕانی: ${article.translator}`
+        h1.headerArticle(dir='rtl')= `وەرگێڕانی: ${article.translator}`
         - const parapraphs = article.description.split('\n');
       each p in parapraphs
-        p.description__text= p
+        p.description__text
+          span(lang="ar" dir="rtl")= p
 
 
     script(src="/js/article.js")
