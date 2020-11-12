@@ -110,7 +110,7 @@ exports.getProfiles = catchAsync(async (req, res, next) => {
 });
 
 exports.getPosterEachMember = catchAsync(async (req, res, next) => {
-    // 1) Get the data, for the requested tour (including reviews and guides)
+    
     const member = await AllPosters.find({
         memberNameEnglish: {
             $eq: req.params.slugMember
