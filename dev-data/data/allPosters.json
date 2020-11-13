@@ -2274,10 +2274,8 @@
     {
         "id": 183,
         "p": 183,
-        "typeFilm": "",
-        "typeTop": "",
-        "typeVariety": "",
-        "typeCompany": "",
+        "typeGift": "gift",
+        "typeCompany": "company",
         "memberNameEnglish": "ali-jaf",
         "title": "Dune Entertainment",
         "photo": "dune entertainment.jpg",
