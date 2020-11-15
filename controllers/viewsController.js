@@ -292,9 +292,6 @@ exports.getActor = catchAsync(async (req, res, next) => {
 
 
 exports.createPoster = catchAsync(async (req, res, next) => {
-    // using try and catch beacuse we have async and await
-    //const newTour = new Tour({});
-    //newTour.save();
 
     const doc = await AllPosters.create(req.body);
 
