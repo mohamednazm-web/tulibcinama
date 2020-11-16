@@ -1,6 +1,30 @@
 
-
-
+,
+    {
+        "id": 315,
+        "p": 315,
+        "typeDirector": "director",
+        "memberNameEnglish": "chro-hizat",
+        "title": "",
+        "photo": "",
+        "writingN": "چرۆ عیزەت",
+        "nameF": "",
+        "description": "",
+        "translator": "..."
+    }
+,
+    {   
+        "id": 178,
+        "p": 178,
+        "typeGift": "gift",
+        "memberNameEnglish": "",
+        "title": "",
+        "photo": "",
+        "writingN": "...", 
+        "nameF": "",  
+        "description": "",
+        "translator": "شاد"
+    }
 ,
     {
         "id": 5,
@@ -8,8 +32,8 @@
         "typeFilm": "film",
         "typeTop": "top",
         "memberNameEnglish": "ali-jaf",
-        "title": "Walter White",
-        "photo": "Walterwhite.jpg",
+        "title": "",
+        "photo": "",
         "writingN": "عەلی جاف",
         "nameF": "",
         "description": ""

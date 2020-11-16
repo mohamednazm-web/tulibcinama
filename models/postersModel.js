@@ -4,7 +4,7 @@ const slugify = require('slugify');
 const posterSchema = new mongoose.Schema({
     title: {
         type: String,
-        //unique: true
+        unique: true
     },
     p: {
         type: Number,
