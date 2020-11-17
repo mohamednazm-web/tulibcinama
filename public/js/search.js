@@ -23,7 +23,7 @@ const outputHtml = matches => {
         
         const html = matches.map(match => `
         <div class="matchTitle"> 
-        <h4><img id="imgSearch" src="/img/posters/${match.photo}"></img><a id="titleSearch" href="/movies/${match.title.toLowerCase().split(' ').join('-')}">${match.title}<a/></h4>
+        <h4><a href="/movies/${match.title.toLowerCase().split(' ').join('-')}"><img id="imgSearch" src="/img/posters/${match.photo}"></img></a><a id="titleSearch" href="/movies/${match.title.toLowerCase().split(' ').join('-')}">${match.title}<a/></h4>
         <small></small>
         </div>
         `
