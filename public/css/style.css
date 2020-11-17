@@ -1402,5 +1402,6 @@ hr {
 .matchTitle {
   background-color: #fff;
   color: #000;
-  padding: 1rem 5rem;
+  padding: 1rem;
+  /* add to sass padding: 1rem;*/
 }

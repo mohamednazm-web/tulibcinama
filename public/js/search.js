@@ -6,9 +6,9 @@ const searchStates = async searchText => {
     const states = await res.json();
 
     let matches = states.filter(state => {
-        const regex = new RegExp(`^${searchText}`, 'gi');
+        const regex = new RegExp(`${searchText}`, 'gi');
               
-        return state.title.match(regex) || state.nameF.match(regex);
+        return state.title.match(regex); //  || state.nameF.match(regex)
     });
     if (searchText.length === 0) {
         matches = [];
@@ -23,7 +23,7 @@ const outputHtml = matches => {
         
         const html = matches.map(match => `
         <div class="matchTitle"> 
-        <h4><a href="/movies/${match.title.toLowerCase().split(' ').join('-')}">${match.title} (${match.nameF})<a/></h4>
+        <h4><img id="imgSearch" src="/img/posters/${match.photo}"></img><a id="titleSearch" href="/movies/${match.title.toLowerCase().split(' ').join('-')}">${match.title}<a/></h4>
         <small></small>
         </div>
         `

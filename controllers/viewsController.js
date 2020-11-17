@@ -117,6 +117,18 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
         }
     })
 
+    const profile = await Profile.find({
+        numOfPosters: {
+            $gte: 5
+        },
+        typeNaxshandn: {
+            $ne: "naxshandn"
+        },
+        typeDeveloper: {
+            $ne: "developer"
+        }
+    })
+
     if (!member) {
         return next(new AppError('There is no article with that name.', 404));
     }
@@ -125,20 +137,20 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
     // 3) Render template using data from 1)
     res.status(200).render('posterEachMember', {
         title: `${member.title} Poster`,
-        member
+        member,
+        profile
     });
 });
 
 exports.getFilm = catchAsync(async (req, res, next) => {
-    // 1) Get tour data from collection
+    
     const film = await AllPosters.find({
         typeFilm: {
             $eq: "film"
         }
     });
 
-    // 2) Build template
-    // 3) Render that template using tour data from 1)
+    
     res.status(200).render('film', {
         title: 'film page',
         film

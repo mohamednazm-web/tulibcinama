@@ -18,7 +18,8 @@ const posterSchema = new mongoose.Schema({
         type: String
     },
     memberNameEnglish: {
-        type: String
+        type: String,
+        unique: true
     },
     slugMember: String,
     imageProfile: {

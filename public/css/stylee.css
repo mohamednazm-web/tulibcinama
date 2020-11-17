@@ -26,10 +26,20 @@ a {
   text-decoration: none;
 }
 
+#titleSearch {
+  font-size: 1.3rem;
+}
+
 img {
   /* make images responsive */
   max-width: 100%;
 }
+
+#imgSearch {
+  width: 4rem;
+  margin: -0.5rem 2rem;
+}
+
 
 input {
   font-family: sans-serif;
