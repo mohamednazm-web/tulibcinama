@@ -13,8 +13,8 @@ exports.posters = catchAsync(async (req, res, next) => {
         }
     }).limit(14);
     const posterTwo = await AllPosters.find({
-        typeVariety: {
-            $eq: "variety"
+        typeChashn: {
+            $eq: "chashn"
         }
     }).limit(7);
 
