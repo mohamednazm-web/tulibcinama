@@ -16,13 +16,13 @@ exports.posters = catchAsync(async (req, res, next) => {
         typeChashn: {
             $eq: "chashn"
         }
-    }).limit(7);
+    }).limit(14); // it must be 14
 
     const profile = await Profile.find({
         numOfPosters: {
             $gte: 5
         }
-    })//////////////////////////
+    })
 
 
 

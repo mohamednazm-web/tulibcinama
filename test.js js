@@ -3,12 +3,13 @@
     {
         "id": 315,
         "p": 315,
-        "typeDirector": "director",
-        "memberNameEnglish": "chro-hizat",
-        "title": "",
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "paywand-basam",
+        "title": "memento (2000)",
         "photo": "",
-        "writingN": "چرۆ عیزەت",
-        "nameF": "",
+        "writingN": "پەیوەند بەسام",
+        "nameF": "چرکە ساتێک(٢٠٠٠)",
         "description": "",
         "translator": "..."
     }
