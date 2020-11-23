@@ -13,8 +13,8 @@ exports.posters = catchAsync(async (req, res, next) => {
         }
     }).limit(14);
     const posterTwo = await AllPosters.find({
-        typeChashn: {  
-            $eq: "chashn"
+        typeChamkakan: {  
+            $eq: "chamkakan"
         }
     }).limit(14); // it must be 14
 
