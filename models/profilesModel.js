@@ -20,6 +20,9 @@ const posterSchema = new mongoose.Schema({
     typeAction: {
         type: String
     },
+    href: {
+        type: String
+    },
     memberNameEnglish: {
         type: String,
         unique: true

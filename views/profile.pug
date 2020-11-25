@@ -8,7 +8,7 @@ block content
           p 
         .pros
             each p in developer
-                a.pro(href="https://web.facebook.com/mohamedmohamed.nazmnazm/")
+                a.pro(href=`${p.href}`)
                   img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook")
                   .realtors__details
                     p.realkljtors__sold= p.memberName  
