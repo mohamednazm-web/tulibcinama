@@ -24,8 +24,6 @@ exports.posters = catchAsync(async (req, res, next) => {
         }
     })
 
-
-
     // 2) Build template
     // 3) Render that template using tour data from 1)
     res.status(200).render('home', {
@@ -98,9 +96,7 @@ exports.getProfiles = catchAsync(async (req, res, next) => {
             $eq: "developer"
         }
     })
- 
-    // 2) Build template
-    // 3) Render template using data from 1)
+
     res.status(200).render('profile', {
         title: `${profile.title} Poster`,
         profile,

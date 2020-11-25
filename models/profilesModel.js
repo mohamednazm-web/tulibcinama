@@ -17,6 +17,9 @@ const posterSchema = new mongoose.Schema({
     typeDeveloper: {
         type: String
     },
+    typeAction: {
+        type: String
+    },
     memberNameEnglish: {
         type: String,
         unique: true

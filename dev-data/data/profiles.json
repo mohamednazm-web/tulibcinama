@@ -304,6 +304,8 @@
         "m": "41",
         "memberName": "شارا موستەفا",
         "memberNameEnglish": "shara mustafa",
+        "typeDeveloper": "developer",
+        "typeAction": "بەڕێوەبەری وێبسایت",
         "description": "\nناوم شارا موستەفا ـیە، تەمەنم ١٩ ساڵە، خوێندکارم لە قۆناغی دووەمی تەکنەلۆژیای زانیاری لە زانکۆی سلێمانی، دانیشتووی شاری کەلارم، خولیایەکی زۆرم ھەیە بۆ سینەما و فیلم، ھەمیشە ھەوڵم داوە زیاتر و زیاتر بزانم دەربارەی سینەما. ھەر لە منداڵییەوە بینەری فیلم بووم و لەگەڵ فیلمەکان گەورە بووم، ماوەی چەند ساڵێکە دەنووسم لەبواری سینەما، لە ئێستادا بەڕێوەبەری وێبسایتی سینەمای تولیپ ـم و ئێوەش دەتوانن لێرەوە خوێنەری بابەتەکانم ببن",
         "imageProfile": "shara-mustafa.jpg",
         "numOfPosters": 5
@@ -383,6 +385,7 @@
         "memberName": "موحەممەد نازم",
         "memberNameEnglish": "mohamed nazm",
         "typeDeveloper": "developer",
+        "typeAction": "دروستکەر و دیزاینەری وێبسایت",
         "description": "",
         "imageProfile": "mohamed-nazm.jpg",
         "numOfPosters": 0
