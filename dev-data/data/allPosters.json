@@ -4587,7 +4587,7 @@
     {
         "id": 401,
         "p": 401,
-        "typeFilm": "film",
+        "typeVariety": "variety",
         "typeFilmNew": "new",
         "memberNameEnglish": "shamal-xaled",
         "title": "Cinema & Family.",
@@ -4600,7 +4600,7 @@
     {
         "id": 402,
         "p": 402,
-        "typeFilm": "film",
+        "typeVariety": "variety",
         "typeFilmNew": "new",
         "memberNameEnglish": "shamal-xaled",
         "title": "Censorship of Cinema in Iran",
@@ -4613,7 +4613,7 @@
     {
         "id": 403,
         "p": 403,
-        "typeFilm": "film",
+        "typeVariety": "variety",
         "typeFilmNew": "new",
         "memberNameEnglish": "shamal-xaled",
         "title": "This is not even a film!",
@@ -4626,7 +4626,7 @@
     {
         "id": 404,
         "p": 404,
-        "typeFilm": "film",
+        "typeVariety": "variety",
         "memberNameEnglish": "shamal-xaled",
         "title": "What are those things that films say?",
         "photo": "Whatarethosethingsthatfilmssay.jpg",
@@ -4638,7 +4638,7 @@
     {
         "id": 405,
         "p": 405,
-        "typeFilm": "film",
+        "typeVariety": "variety",
         "memberNameEnglish": "shamal-xaled",
         "title": "Repeating of Plays and Scripts in Iranian Cinema , Why this?",
         "photo": "Repeating.jpg",
@@ -4660,7 +4660,7 @@
     },{
         "id": 407,
         "p": 407,
-        "typeFilm": "film",
+        "typeChamkakan": "Chamkakan",
         "memberNameEnglish": "shamal-xaled",
         "title": "what is the Spoil is?",
         "photo": "whatistheSpoilis.jpg",
@@ -4685,6 +4685,7 @@
         "id": 409,
         "p": 409,
         "typeFilm": "film",
+        "typeTop": "top",
         "memberNameEnglish": "shamal-xaled",
         "title": "E.T. the Extra-Terrestrial 1982",
         "photo": "ETtheExtraTerrestrial1982.jpg",
