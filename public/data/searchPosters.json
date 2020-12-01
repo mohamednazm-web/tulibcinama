@@ -4885,7 +4885,8 @@
     "writingN": "بینایی سەبار", 
     "nameF": "ئانمێی",
     "translator": "..."
-},{
+},
+{
     "id": 428,
     "p": 428,
     "typeFilm": "film",
@@ -4902,7 +4903,7 @@
     "typeDirector": "director",
     "memberNameEnglish": "kaziw-shaml",
     "title": "Oriol Paulo",
-    "photo": "OriolPaulo.jpg",
+    "photo": "oriolpaulo.jpg",
     "writingN": "کازیو شامل",
     "nameF": "ئۆریۆل پاولۆ",
     "translator": "..."
@@ -4913,7 +4914,7 @@
     "typeFilm": "film",
     "memberNameEnglish": "kaziw-shaml",
     "title": "The professor 2017",
-    "photo": "Theprofessor2017.jpg",
+    "photo": "theprofessor2018.jpg",
     "writingN": "کازیو شامل",
     "nameF": "پرۆفیسۆر ٢٠١٧",
     "translator": "..."
@@ -4924,7 +4925,7 @@
     "typeFilm": "film",
     "memberNameEnglish": "kaziw-shaml",
     "title": "‏A Dangerous Method 2011",
-    "photo": "‏ADangerousMethod2011.jpg",
+    "photo": "‏adangerousmethod2011.jpg",
     "writingN": "کازیو شامل",
     "nameF": "رێگایەکی مەترسیدار ٢٠١١",
     "translator": "..."
@@ -4935,7 +4936,7 @@
     "typeFilm": "film",
     "memberNameEnglish": "kaziw-shaml",
     "title": "When Nietzsche Wept 2007",
-    "photo": "WhenNietzscheWept2007.jpg",
+    "photo": "whennietzschewept2007.jpg",
     "writingN": "کازیو شامل",
     "nameF": "کاتێک نیتچە گریا ٢٠٠٧",
     "translator": "..."
