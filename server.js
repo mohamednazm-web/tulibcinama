@@ -30,7 +30,7 @@ app.listen(port, () => {
   console.log(`App runinig on port ${port}`);
 });
 
-/*process.on('unhandledRejection', err => {
+process.on('unhandledRejection', err => {
   console.log('UNHANDLED REJECTION! 💥 Shutting down...');
   console.log(err.name, err.message);
   server.close(() => {
@@ -43,4 +43,4 @@ process.on('SIGTERM', () => {
   server.close(() => {
     console.log('💥 Process terminated!');
   });
-});*/
+});
