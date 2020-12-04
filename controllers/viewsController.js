@@ -208,14 +208,14 @@ exports.getCompany = catchAsync(async (req, res, next) => {
         typeCompany: {
             $eq: "company"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
     res.status(200).render('company', {
         title: 'company',
         company
-    }).limit(50);
+    });
 });
 
 exports.getGift = catchAsync(async (req, res, next) => {
@@ -224,14 +224,14 @@ exports.getGift = catchAsync(async (req, res, next) => {
         typeGift: {
             $eq: "gift"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
     res.status(200).render('gift', {
         title: 'gift',
         gift
-    }).limit(50);
+    });
 });
 
 exports.getChashn = catchAsync(async (req, res, next) => {
