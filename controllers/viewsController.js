@@ -144,7 +144,7 @@ exports.getFilm = catchAsync(async (req, res, next) => {
         typeFilm: {
             $eq: "film"
         }
-    });
+    }).limit(50);
 
     
     res.status(200).render('film', {
@@ -176,7 +176,7 @@ exports.getVariety = catchAsync(async (req, res, next) => {
         typeVariety: {
             $eq: "variety"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
@@ -215,7 +215,7 @@ exports.getCompany = catchAsync(async (req, res, next) => {
     res.status(200).render('company', {
         title: 'company',
         company
-    });
+    }).limit(50);
 });
 
 exports.getGift = catchAsync(async (req, res, next) => {
@@ -231,7 +231,7 @@ exports.getGift = catchAsync(async (req, res, next) => {
     res.status(200).render('gift', {
         title: 'gift',
         gift
-    });
+    }).limit(50);
 });
 
 exports.getChashn = catchAsync(async (req, res, next) => {
@@ -240,7 +240,7 @@ exports.getChashn = catchAsync(async (req, res, next) => {
         typeChashn: {
             $eq: "chashn"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
@@ -256,7 +256,7 @@ exports.getSeries = catchAsync(async (req, res, next) => {
         typeSeries: {
             $eq: "series"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
@@ -272,7 +272,7 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
         typeChamkakan: {
             $eq: "chamkakan"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
@@ -288,7 +288,7 @@ exports.getActor = catchAsync(async (req, res, next) => {
         typeActor: {
             $eq: "actor"
         }
-    });
+    }).limit(50);
 
     // 2) Build template
     // 3) Render that template using tour data from 1)
