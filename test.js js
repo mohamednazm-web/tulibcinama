@@ -1,3 +1,20 @@
+
+,
+    {
+        "id": 433,
+        "p": 433,
+        "idPoster": "",
+        "typeFilm": "film",
+        "typeTop": "top",
+        "memberNameEnglish": "paywand-basam",
+        "title": "",
+        "photo": "",
+        "writingN": "پەیوەند بەسام",
+        "nameF": "",
+        "description": "\n\n\n\n\n\n",
+        "translator": "..."
+    }
+
 ,
     {   
         "id": 158,
@@ -17,10 +34,11 @@
         "p": 413,
         "typeFilm": "film",
         "memberNameEnglish": "shamal-xaled",
-        "title": "What are those things that films say?",
+        "title": "",
         "photo": "",
         "writingN": "شەماڵ خالید",
-        "nameF": "فیلمەکان چیمان پێ دەڵێن؟",
+        "nameF": "",
         "description": "",
         "translator": "..."
     }
+

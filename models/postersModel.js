@@ -63,6 +63,9 @@ const posterSchema = new mongoose.Schema({
     },
     description: {
         type: String
+    },
+    idPoster: {
+        type: String
     }
 });
 
