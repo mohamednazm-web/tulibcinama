@@ -35,5 +35,4 @@ router.get('/actor', viewsController.getActor);
 
 router.post('/', viewsController.createPoster);
 
-
 module.exports = router;

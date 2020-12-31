@@ -1,9 +1,53 @@
 extends base
 
 block content
-    section.posterOne
-    .posterOne__title(href="#")
-        p
+  body
+    .mContainer
+      .main-content
+        // Header  https://www.cashadvance6online.com/data/archive/img/3903770158.jpeg
+        .mHeader.pb-8.pt-5.pt-lg-8.d-flex.align-items-center(style=`\
+        min-height: 430px;\
+        background-image:url(/img/profile/${mProfile.imageProfile});\
+        background-size: cover;\
+        background-position: center top;\
+        `)
+          // Mask
+          span.mask.bg-gradient-default.opacity-8
+          // Header container
+          .container-fluid.d-flex.align-items-center
+            .row
+              .col-lg-7.col-md-10
+                //h1.display-2.text-white= mProfile.memberName
+        // Page content
+        .container-fluid.mt--7
+          .row
+            .col-xl-4.order-xl-2.mb-5.mb-xl-0
+              .card.card-profile.shadow
+                .row.justify-content-center
+                  .col-lg-3.order-lg-2
+                    .card-profile-image
+                      a.buttonStyle(href="#")
+                        img.rounded-circle.imageMember(src=`/img/profile/${mProfile.imageProfile}`, alt="")
+                .card-header.text-center.border-0.pt-8.pt-md-4.pb-0.pb-md-4
+                  .d-flex.justify-content-between
+                    a.btn.btn-sm.btn-info.mr-4.buttonStyle(href="#") Facebook
+                    a.btn.btn-sm.btn-default.float-right.buttonStyle(href="#") Instagram
+                .card-body.pt-0.pt-md-4
+                  .row
+                    .col
+                      .card-profile-stats.d-flex.justify-content-center.mt-md-5
+                        div
+                          span.nameWriter= mProfile.memberName
+                          span.heading= mProfile.numOfPosters
+                          span.description ژمارەی بەرهەم
+                        
+                  .text-center
+                    hr.my-4.mline
+                    p.mParagraph= mProfile.description
+                      
+    section.posterOne 
+    .posterOne__title(href="#") 
+        p(style="font-size:1.8rem; font-weight: bold; letter-spacing: 0;") بەرهەمەکانی
     .posters
 
         each m in member
