@@ -6,24 +6,22 @@ $bp-small-2: 28.75em; // 460px;
 $bp-small-3: 24.0625em; // 385px;
 $bp-mobile: 24em; // 375px;
 $bp-small-mobile: 22em; // 350px;
-
-
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    // This defines what 1rem is
-    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
 
 body {
-    font-family: var(--font-primary);
-    color: var(--color-grey-dark-1);
-    background-color: #F5F5F5;
-    line-height: 1.6;
+  font-family: var(--font-primary);
+  color: var(--color-grey-dark-1);
+  background-color: #f5f5f5;
+  line-height: 1.6;
 }

@@ -4,15 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "watch:sass": "node-sass ./public/sass/main.scss public/css/style.css -w",
     "start": "node server.js ",
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+    "compile:sass": "node-sass ./public/sass/main.scss public/css/style.comp.css",
     "dev": "nodemon server.js",
-    "dev3": "npm-run-all --parallel devserver watch:sass",
+    "dev2": "npm-run-all --parallel devserver watch:sass",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "devserver": "live-server"
   },
   "author": "",
   "license": "ISC",
@@ -58,7 +59,9 @@
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.17.0",
     "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3"
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
   },
   "engines": {
     "node": ">=10.0.0"

@@ -1,340 +1,367 @@
+// hello from sass
 .swiper {
-    background-color: #EBEBEB;
-    grid-column: cover-start / cover-end;
-    margin-bottom: 4rem;
+  background-color: #ebebeb;
+  grid-column: cover-start / cover-end;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
 
-    display: grid;
-    //grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 8em 1fr 8em;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 8em 1fr 8em;
-    }
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 8em 1fr 8em;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 8em 1fr 8em;
-    }
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: none;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        grid-template-columns: none;
-    }
+  @media only screen and (max-width: 24em) {
+    grid-template-rows: 0 1fr 10rem;
+    padding: 1rem;
+  }
 
-    @media only screen and (max-width: $bp-mobile) {
-        grid-template-rows: 0 1fr 10rem;
-        padding: 1rem;
-    }
-
+  @media only screen and (max-width: 24em) {
+    grid-template-rows: 0 1fr 10rem;
+    padding: 1rem;
+  }
 }
 
 .reklame {
+  padding: 5rem;
+  font-size: 2rem;
+  background-color: #aaa;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+    // margin: 0 0.3rem;
+    //width: 0;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    margin-top: 1rem;
+    width: 0;
+    margin-left: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small-mobile) {
+    width: 96%;
+    margin-left: 0.6rem;
+  }
+
+  &-2 {
     padding: 5rem;
     font-size: 2rem;
     background-color: #aaa;
-
-
-    @media only screen and (max-width: $bp-small) {
-        padding: 3rem;
-        // margin: 0 0.3rem;
-        //width: 0;
-    }
-
-    @media only screen and (max-width: $bp-mobile) {
-        margin-top: 1rem;
-        width: 0;
-        margin-left: 2rem;
-    }
-
-
-    @media only screen and (max-width: $bp-small-mobile) {
-        width: 96%;
-        margin-left: 0.6rem;
-    }
-
-    &-2 {
-        padding: 5rem;
-        font-size: 2rem;
-        background-color: #aaa;
-        width: 100%;
-        margin: 0 auto;
-    }
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .slider {
-    width: 80rem;
-    height: 40rem;
-    //border-radius: 10px;
-    overflow: hidden;
+  width: 80rem;
+  height: 40rem;
+  overflow: hidden;
 
-    @media only screen and (max-width: $bp-largest) {
-        width: 60rem;
-        height: 35rem;
-    }
+  @media only screen and (max-width: 75em) {
+    width: 60rem;
+    height: 35rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-        width: 48rem;
-        height: 33rem;
-    }
+  @media only screen and (max-width: 62.5em) {
+    width: 48rem;
+    height: 33rem;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        //width: 48rem;
-        //height: 33rem;
-    }
+  @media only screen and (max-width: 37.5em) {
+    width: 57rem;
+    height: 33rem;
+    margin: 9px auto;
+  }
 
-    @media only screen and (max-width: $bp-small-2) {
-        width: 45rem;
-        height: 26rem;
-    }
+  @media only screen and (max-width: 24.0625em) {
+    width: 45rem;
+    height: 26rem;
+  }
 
-    @media only screen and (max-width: $bp-small-3) {
-        width: 45rem;
-        height: 26rem;
-    }
+  @media only screen and (max-width: 28.75em) {
+    width: 38rem;
+    height: 26rem;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        width: 57rem;
-        height: 33rem;
+  @media only screen and (max-width: 461px) {
+    width: 40rem;
+    height: 20rem;
+    margin-top: -2rem;
+  }
 
-        margin: 9px auto;
-    }
+  @media only screen and (max-width: 385px) {
+    width: 36rem;
+    height: 20rem;
+  }
 
-    @media only screen and (max-width: $bp-mobile) {
-        width: 34rem;
-        height: 21rem;
-    }
+  @media only screen and (max-width: 375px) {
+    width: 36rem;
+    height: 20rem;
+    margin-top: -2rem;
+  }
 
-    @media only screen and (max-width: $bp-small-mobile) {
-        width: 29.5rem;
-        height: 17rem;
-        margin-top: 0;
-    }
+  @media only screen and (max-width: 24em) {
+    width: 34rem;
+    height: 21rem;
+  }
 
+  @media only screen and (max-width: 360px) {
+    width: 34rem;
+    height: 20rem;
+    margin-top: -2rem;
+  }
 
+  @media only screen and (max-width: 22em) {
+    width: 29.5rem;
+    height: 17rem;
+    margin-top: 0;
+  }
 }
 
 .slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
+  width: 500%;
+  height: 500px;
+  display: flex;
 }
 
 .slides input {
-    display: none;
+  display: none;
 }
 
 .slide {
-    width: 20%;
-    transition: 2s;
+  width: 20%;
+  transition: 2s;
 }
 
 .slide img {
-    width: 80rem;
-    height: 40rem;
+  width: 80rem;
+  height: 40rem;
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 
-    -webkit-filter: brightness(100%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  @media only screen and (max-width: 75em) {
+    width: 60rem;
+    height: 35rem;
+  }
 
-    @media only screen and (max-width: $bp-largest) {
-        width: 60rem;
-        height: 35rem;
-    }
+  @media only screen and (max-width: 62.5em) {
+    width: 52rem;
+    height: 35rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-        width: 52rem;
-        height: 35rem;
-        //margin-top: -20rem;
-    }
+  @media only screen and (max-width: 50em) {
+    width: 52rem;
+    height: 35rem;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        width: 52rem;
-        height: 35rem;
-        //margin-top: -20rem;
-    }
+  @media only screen and (max-width: 28.75em) {
+    width: 45rem;
+    height: 26rem;
+  }
 
-    @media only screen and (max-width: $bp-small-2) {
-        width: 45rem;
-        height: 26rem;
-    }
+  @media only screen and (max-width: 24.0625em) {
+    width: 38rem;
+    height: 26rem;
+  }
 
-    @media only screen and (max-width: $bp-small-3) {
-        width: 38rem;
-        height: 26rem;
-    }
+  @media only screen and (max-width: 37.5em) {
+    width: 57rem;
+    height: 33rem;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        width: 57rem;
-        height: 33rem;
-    }
+  @media only screen and (max-width: 461px) {
+    width: 40rem;
+    height: 20rem;
+  }
 
-    @media only screen and (max-width: $bp-mobile) {
-        width: 34rem;
-        height: 21rem;
-    }
+  @media only screen and (max-width: 24em) {
+    width: 34rem;
+    height: 21rem;
+  }
 
-    @media only screen and (max-width: $bp-small-mobile) {
-        width: 29.5rem;
-        height: 17rem;
-    }
+  @media only screen and (max-width: 385px) {
+    width: 36rem;
+    height: 21rem;
+  }
 
-    &:hover {
-        -webkit-filter: brightness(70%);
-    }
+  @media only screen and (max-width: 375px) {
+    width: 36rem;
+    height: 21rem;
+  }
+
+  @media only screen and (max-width: 360px) {
+    width: 34rem;
+    height: 20rem;
+  }
+
+  @media only screen and (max-width: 22em) {
+    width: 29.5rem;
+    height: 17rem;
+  }
+
+  &:hover {
+    -webkit-filter: brightness(70%);
+  }
 }
 
 /*css for manual slide navigation*/
 
 .navigation-manual {
-    position: absolute;
-    width: 80rem;
-    margin-top: -14rem;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 80rem;
+  margin-top: -14rem;
+  display: flex;
+  justify-content: center;
 
-    @media only screen and (max-width: $bp-largest) {
-        width: 59rem;
-        margin-top: -19rem;
-    }
+  @media only screen and (max-width: $bp-largest) {
+    width: 59rem;
+    margin-top: -19rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-        width: 52rem;
-        margin-top: -20rem;
-    }
+  @media only screen and (max-width: $bp-large) {
+    width: 52rem;
+    margin-top: -20rem;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        //width: 52rem;
-        //margin-top: -20rem;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    //width: 52rem;
+    //margin-top: -20rem;
+  }
 
-    @media only screen and (max-width: $bp-small-2) {
-        width: 46rem;
-        margin-top: 23rem;
-    }
+  @media only screen and (max-width: $bp-small-2) {
+    width: 46rem;
+    margin-top: 23rem;
+  }
 
-    @media only screen and (max-width: $bp-small-3) {
-        width: 39rem;
-        margin-top: -27rem;
-    }
+  @media only screen and (max-width: $bp-small-3) {
+    width: 39rem;
+    margin-top: -27rem;
+  }
 
-    @media only screen and (max-width: $bp-mobile) {
-        width: 35rem;
-        margin-top: -31.5rem;
-    }
+  @media only screen and (max-width: $bp-mobile) {
+    width: 35rem;
+    margin-top: -31.5rem;
+  }
 
-
-    @media only screen and (max-width: $bp-small-mobile) {
-        width: 29rem;
-        margin-top: -36rem;
-    }
-
-
+  @media only screen and (max-width: $bp-small-mobile) {
+    width: 29rem;
+    margin-top: -36rem;
+  }
 }
 
 .manual-btn {
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .manual-btn:hover {
-    background: #40D3DC;
+  background: #40d3dc;
 }
 
-#radio1:checked~.first {
-    margin-left: 0;
+#radio1:checked ~ .first {
+  margin-left: 0;
 }
 
-#radio2:checked~.first {
-    margin-left: -20%;
+#radio2:checked ~ .first {
+  margin-left: -20%;
 }
 
-#radio3:checked~.first {
-    margin-left: -40%;
+#radio3:checked ~ .first {
+  margin-left: -40%;
 }
 
-#radio4:checked~.first {
-    margin-left: -60%;
+#radio4:checked ~ .first {
+  margin-left: -60%;
 }
 
 /*css for automatic navigation*/
 
 .navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 80rem;
-    justify-content: center;
-    margin-top: 36rem;
+  position: absolute;
+  display: flex;
+  width: 80rem;
+  justify-content: center;
+  margin-top: 36rem;
 
-    @media only screen and (max-width: $bp-largest) {
-        width: 59rem;
-        margin-top: 31rem;
-    }
+  @media only screen and (max-width: $bp-largest) {
+    width: 59rem;
+    margin-top: 31rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-        width: 52rem;
-        margin-top: 30rem;
-    }
+  @media only screen and (max-width: $bp-large) {
+    width: 52rem;
+    margin-top: 30rem;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        //width: 52rem;
-        //margin-top: 30rem;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    //width: 52rem;
+    //margin-top: 30rem;
+  }
 
-    @media only screen and (max-width: $bp-small-2) {
-        width: 46rem;
-        margin-top: 23rem;
-    }
+  @media only screen and (max-width: $bp-small-2) {
+    width: 46rem;
+    margin-top: 23rem;
+  }
 
-    @media only screen and (max-width: $bp-small-3) {
-        width: 39rem;
-        margin-top: 23rem;
-    }
+  @media only screen and (max-width: $bp-small-3) {
+    width: 39rem;
+    margin-top: 23rem;
+  }
 
-    @media only screen and (max-width: $bp-mobile) {
-        width: 35rem;
-        margin-top: 18.5rem;
-    }
+  @media only screen and (max-width: $bp-mobile) {
+    width: 35rem;
+    margin-top: 18.5rem;
+  }
 
-    @media only screen and (max-width: $bp-small-mobile) {
-        width: 29rem;
-        margin-top: 14rem;
-    }
-
-
+  @media only screen and (max-width: $bp-small-mobile) {
+    width: 29rem;
+    margin-top: 14rem;
+  }
 }
 
 .navigation-auto div {
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
 }
 
 .navigation-auto div:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background: #40D3DC;
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40d3dc;
 }
 
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background: #40D3DC;
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40d3dc;
 }
 
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background: #40D3DC;
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40d3dc;
 }
 
-#radio4:checked~.navigation-auto .auto-btn4 {
-    background: #40D3DC;
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #40d3dc;
 }

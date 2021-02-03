@@ -1,204 +1,197 @@
+// hello from sass
+
 .footer {
-    grid-column: full-start / full-end;
-    background-color: #08192b;
-    padding: 2rem 3rem;
-    font-size: 15px;
-    line-height: 24px;
-    color: #737373;
+  grid-column: full-start / full-end;
+  background-color: #08192b;
+  padding: 2rem 3rem;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
 
-    ::selection {
-        background-color: darkcyan;
-        color: #000;
-    }
+  ::selection {
+    background-color: darkcyan;
+    color: #000;
+  }
 
-    @media only screen and (max-width: $bp-largest) {
-        padding: 1rem 1rem;
-    }
+  @media only screen and (max-width: $bp-largest) {
+    padding: 1rem 1rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-        padding: 1rem 1rem;
-        font-size: 1.35rem;
-    }
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem 1rem;
+    font-size: 1.35rem;
+  }
 }
 
 hr {
-    margin: 0 5rem;
-    border-top-color: #869fb2;
-    opacity: 0.5;
+  margin: 0 5rem;
+  border-top-color: #869fb2;
+  opacity: 0.5;
 }
 
 .holder-up {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    //grid-gap: 2rem;
-    text-align: right;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  //grid-gap: 2rem;
+  text-align: right;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 2rem;
+    grid-gap: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    padding: 0.5rem;
+  }
+
+  &__title {
+    margin: 2rem 0;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-weight: 300;
 
     @media only screen and (max-width: $bp-large) {
-        padding: 2rem;
-        grid-gap: 0;
+      font-size: 1.7rem;
     }
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 2rem;
-        padding: 0.5rem;
+  &__links {
+    margin: 2rem 0;
+    list-style: none;
+    display: block;
+
+    &-tag {
+      //font-size: 14px;
+      font-weight: 400;
+      color: #cfd9e0;
+      display: inline-block;
+      text-decoration: none;
+
+      &:hover {
+        color: #bac8d3;
+      }
     }
+  }
 
-    &__title {
-        margin: 2rem 0;
-        color: #fff;
-        font-size: 2rem;
-        text-transform: uppercase;
-        margin-top: 5px;
-        letter-spacing: 1px;
-        font-weight: 300;
+  &__paragraph {
+    color: #cfd9e0;
+    font-weight: 400;
+    //text-align: justify;
+  }
 
-        @media only screen and (max-width: $bp-large) {
-            font-size: 1.7rem
-        }
-    }
-
-    &__links {
-        margin: 2rem 0;
-        list-style: none;
-        display: block;
-
-
-        &-tag {
-            //font-size: 14px;
-            font-weight: 400;
-            color: #cfd9e0;
-            display: inline-block;
-            text-decoration: none;
-
-            &:hover {
-                color: #bac8d3;
-            }
-        }
-    }
-
-    &__paragraph {
-        color: #cfd9e0;
-        font-weight: 400;
-        //text-align: justify;
-    }
-
-    &__About {}
+  &__About {
+  }
 }
 
 .holder-down {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-    margin-top: -4rem;
-    padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: -4rem;
+  padding: 5rem;
 
-
-    &__copyright {
-        color: #869fb2;
-        align-self: start;
-    }
-
+  &__copyright {
+    color: #869fb2;
+    align-self: start;
+  }
 }
 
-
 .effect {
-    background-color: $basic-light-color;
+  background-color: $basic-light-color;
 
-    h2 {
-        color: $basic-light-color;
+  h2 {
+    color: $basic-light-color;
 
-        font: {
-            family: 'Playfair Display', serif;
-            weight: 400;
-            size: 25px;
-        }
-
-        letter-spacing: 3px;
+    font: {
+      family: 'Playfair Display', serif;
+      weight: 400;
+      size: 25px;
     }
 
-    &:nth-child(2) {
-        margin-top: 50px;
+    letter-spacing: 3px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  &:nth-child(2n) {
+    a {
+      color: $basic-light-color;
+      border-color: $basic-light-color;
     }
+  }
 
-
-
-    &:nth-child(2n) {
-
-        a {
-            color: $basic-light-color;
-            border-color: $basic-light-color;
-        }
-    }
-
-    .buttons {
-        display: grid;
-        grid-template-columns: repeat(3, 7rem);
-        justify-content: end;
-        margin-right: -3.7rem;
-    }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    justify-content: end;
+    margin-right: -3.7rem;
+  }
 }
 
 /* styles for a common effect !!!YOU NEED THEM */
 .effect {
+  a {
+    text-decoration: none !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    color: $basic-dark-color; //or change to your own color
+    border: 2px solid $basic-dark-color; //or change to your own color
 
-    a {
-        text-decoration: none !important;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: $border-radius;
-        margin-right: 20px;
-        font-size: $font-size;
-        overflow: hidden;
-        position: relative;
-        color: $basic-dark-color; //or change to your own color
-        border: 2px solid $basic-dark-color; //or change to your own color
-
-        i {
-            position: relative;
-            z-index: 3;
-        }
-
-        &:last-child {
-            margin-right: 0px;
-        }
-
-        &:before {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
-
-        i {
-            display: inline-block;
-            vertical-align: middle;
-        }
+    i {
+      position: relative;
+      z-index: 3;
     }
-}
 
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
 
 /* lavinia effect */
 
 .effect.thurio {
+  a {
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
 
-    a {
-        transition: border-radius 0.2s linear 0s;
-        transform: rotate(45deg);
-
-        i {
-            transition: transform 0.01s linear 0s;
-            transform: rotate(-45deg);
-        }
-
-        &:hover {
-            border-radius: 0px;
-        }
+    i {
+      transition: transform 0.01s linear 0s;
+      transform: rotate(-45deg);
     }
+
+    &:hover {
+      border-radius: 0px;
+    }
+  }
 }
 
 // for more animations use this link

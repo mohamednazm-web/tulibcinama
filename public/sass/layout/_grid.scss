@@ -1,5 +1,10 @@
 .container {
-    display: grid;
-    grid-template-rows: repeat(8, min-content);
-    grid-template-columns: [full-start] 1.3rem [cover-start] 2.2rem [poster-start] 1fr repeat(16, [col-start] minmax(min-content, 8.5rem) [col-end]) 1fr [poster-end] 2.2rem [cover-end] 1.3rem [full-end];
-}
+  display: grid;
+  grid-template-rows: repeat(8, min-content);
+  grid-template-columns:
+    [full-start] 1.3rem [cover-start] 2.2rem [poster-start] 1fr repeat(
+      16,
+      [col-start] minmax(min-content, 8.5rem) [col-end]
+    )
+    1fr [poster-end] 2.2rem [cover-end] 1.3rem [full-end];
+} // hello from sass

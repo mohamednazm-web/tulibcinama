@@ -7,9 +7,9 @@ const AppError = require('../utils/appError');
 exports.posters = catchAsync(async (req, res, next) => {
   // 1) Get tour data from collection
   const posterOne = await AllPosters.find({
-    typeFilmNew: {
+    typeFilm: {
       //$eq: "film"
-      $eq: 'new'
+      $eq: 'film'
     }
   }).limit(14);
   const posterTwo = await AllPosters.find({
