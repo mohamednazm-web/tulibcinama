@@ -1,4 +1,4 @@
 node_modules/
 *.env
 .cache/
-.dev-data\data\allPosters.json
+public/img/posters/
