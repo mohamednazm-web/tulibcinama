@@ -19,9 +19,8 @@ body {
 .hama {
   width: 152rem;
   height: 2000rem;
-  background-color: #329b97;
-  color: whitesmoke;
-  padding-top: 32rem;
+  background-color: #40e0d0;
+  padding-top: 36rem;
 }
 @media only screen and (max-width: 1321px) {
   .hama {
@@ -106,36 +105,6 @@ body {
     width: 32rem;
   }
 }
-/* 
-@media only screen and (max-width: 1173px) {
-  .hama {
-    width: 117.4rem;
-  }
-}
-
-@media only screen and (max-width: 1173px) {
-  .hama {
-    width: 117.4rem;
-  }
-}
-
-@media only screen and (max-width: 1173px) {
-  .hama {
-    width: 117.4rem;
-  }
-}
-
-@media only screen and (max-width: 1173px) {
-  .hama {
-    width: 117.4rem;
-  }
-}
-
-@media only screen and (max-width: 1173px) {
-  .hama {
-    width: 117.4rem;
-  }
-} */
 
 /*spinner loader*/
 .loader,
@@ -150,7 +119,7 @@ body {
   animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-  color: #f8f8f8;
+  color: #fffafa;
   font-size: 10px;
   margin: 0 auto;
   position: relative;
