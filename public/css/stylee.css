@@ -21,8 +21,121 @@ body {
   height: 2000rem;
   background-color: #329b97;
   color: whitesmoke;
-  padding-top: 30rem;
+  padding-top: 32rem;
 }
+@media only screen and (max-width: 1321px) {
+  .hama {
+    width: 132rem;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+}
+
+@media only screen and (max-width: 1039px) {
+  .hama {
+    width: 104rem;
+  }
+}
+
+@media only screen and (max-width: 826px) {
+  .hama {
+    width: 89rem;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  .hama {
+    width: 72rem;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  .hama {
+    width: 72rem;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  .hama {
+    width: 45rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .hama {
+    width: 42rem;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .hama {
+    width: 39rem;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .hama {
+    width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hama {
+    width: 36rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .hama {
+    width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .hama {
+    width: 36rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hama {
+    width: 32rem;
+  }
+}
+/* 
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  .hama {
+    width: 117.4rem;
+  }
+} */
 
 /*spinner loader*/
 .loader,
