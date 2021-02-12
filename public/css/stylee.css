@@ -21,17 +21,9 @@ body {
   height: 2000rem;
   background-color: #329b97;
   color: whitesmoke;
-  padding-top: 36rem;
+  padding-top: 30rem;
 }
-@media only screen and (max-width: 1169px) {
-  .hama {
-    width: 42rem;
-    height: 2000rem;
-    background-color: #4cebd9;
-    color: whitesmoke;
-    padding-top: 36rem;
-  }
-}
+
 /*spinner loader*/
 .loader,
 .loader:before,
