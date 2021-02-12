@@ -15,6 +15,82 @@ body {
   background-color: #ffffff;
 }
 
+/***************************************/
+.hama {
+  width: 152rem;
+  height: 2000rem;
+  background-color: #329b97;
+  color: whitesmoke;
+  padding-top: 36rem;
+}
+@media only screen and (max-width: 1169px) {
+  .hama {
+    width: 45rem;
+    height: 2000rem;
+    background-color: #4cebd9;
+    color: whitesmoke;
+    padding-top: 36rem;
+  }
+}
+/*spinner loader*/
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #f8f8f8;
+  font-size: 10px;
+  margin: 0 auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+} /**********************/
+
 @media only screen and (max-width: 1169px) {
   body.nav-on-left.overflow-hidden {
     overflow: hidden;
@@ -1322,7 +1398,7 @@ support for no js
 
 /* reklame style */
 .reklame-res-container {
-  width: 600px;
+  width: 1097px;
   height: 65px;
   margin: 0 auto;
   background-color: #383838;
@@ -1381,6 +1457,7 @@ support for no js
   font-size: 1.2rem;
 }
 
+/*
 .place-of-image2 {
   margin-top: -3.5px;
 }
@@ -1389,4 +1466,4 @@ support for no js
   .place-of-image2 {
     margin-top: -17px;
   }
-}
+}*/

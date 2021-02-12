@@ -26,13 +26,16 @@ html
      meta(property="og:site_name" content="tulipcinema.com")
      meta(property="article:publisher" content="/tulipcinema")
      script(src='/js/modernizr.js')
+     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+     script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js")
      // Modernizr
      link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+     script(src="/js/loader.js" type="text/javascript")
 
-    
+  //<div class="hama"><div class="loader">Loading...</div></div>
   body.container(lang='ar')
-
-    
+    .hama
+      .loader Loading...
     .searchCover
       header.cd-main-header
         a.cd-logo(href="/")
@@ -133,7 +136,7 @@ html
         form
           input#search.form-control.form-control-lg(type="text" placeholder="...گەڕان")
           #match-list.searchContainer
-
+      
       script(src="/js/search.js")
       script(src="/js/jquery-2.1.1.js")
       script(src="/js/jquery.mobile.custom.min.js")
