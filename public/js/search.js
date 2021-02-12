@@ -22,6 +22,7 @@ const outputHtml = matches => {
     const html = matches
       .map(
         match => `
+        <div class="loader">Loading...</div>
         <div class="matchTitle"> 
         <h4><a href="/movies/${match.title
           .toLowerCase()
