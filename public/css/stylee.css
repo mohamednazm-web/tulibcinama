@@ -67,12 +67,14 @@ body {
 @media only screen and (max-width: 415px) {
   .hama {
     width: 42rem;
+    padding-top: 32rem;
   }
 }
 
 @media only screen and (max-width: 386px) {
   .hama {
     width: 39rem;
+    padding-top: 36rem;
   }
 }
 
@@ -91,6 +93,7 @@ body {
 @media only screen and (max-width: 355px) {
   .hama {
     width: 38rem;
+    padding-top: 32rem;
   }
 }
 
