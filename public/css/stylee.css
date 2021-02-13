@@ -19,7 +19,7 @@ body {
 .hama {
   width: 152rem;
   height: 2000rem;
-  background-color: #40e0d0;
+  background-color: #fffafa;
   padding-top: 38rem;
 }
 @media only screen and (max-width: 1321px) {
@@ -46,6 +46,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hama {
+    width: 77rem;
+  }
+}
+
 @media only screen and (max-width: 689px) {
   .hama {
     width: 72rem;
@@ -67,20 +73,36 @@ body {
 @media only screen and (max-width: 415px) {
   .hama {
     width: 42rem;
-    padding-top: 32rem;
+  }
+}
+
+@media only screen and (max-width: 415px), screen and (max-height: 896px) {
+  .hama {
+    padding-top: 40rem;
+  }
+}
+
+@media only screen and (max-width: 415px), screen and (max-height: 846px) {
+  .hama {
+    padding-top: 38rem;
+  }
+}
+
+@media only screen and (max-width: 415px), screen and (max-height: 736px) {
+  .hama {
+    padding-top: 35rem;
   }
 }
 
 @media only screen and (max-width: 386px) {
   .hama {
     width: 39rem;
-    padding-top: 36rem;
   }
 }
 
-@media only screen and (max-width: 386px) {
+@media only screen and (max-width: 376px), screen and (max-height: 667px) {
   .hama {
-    width: 38rem;
+    padding-top: 31rem;
   }
 }
 
@@ -90,10 +112,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 360px), screen and (max-height: 640px) {
+  .hama {
+    padding-top: 29.5rem;
+  }
+}
+
 @media only screen and (max-width: 355px) {
   .hama {
     width: 38rem;
-    padding-top: 32rem;
   }
 }
 
@@ -106,6 +133,12 @@ body {
 @media only screen and (max-width: 320px) {
   .hama {
     width: 32rem;
+  }
+}
+
+@media only screen and (max-width: 320px), screen and (max-height: 568px) {
+  .hama {
+    padding-top: 27.5rem;
   }
 }
 
@@ -122,7 +155,7 @@ body {
   animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-  color: #fffafa;
+  color: #40e0d0;
   font-size: 10px;
   margin: 0 auto;
   position: relative;
@@ -132,6 +165,11 @@ body {
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
+}
+@media only screen and (max-width: 415px) {
+  .loader {
+    font-size: 6px;
+  }
 }
 .loader:before,
 .loader:after {
