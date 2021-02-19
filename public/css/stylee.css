@@ -1555,19 +1555,43 @@ support for no js
   font-size: 1.2rem;
 }
 
+.place-of-image.mobile-v-rek-1,
+.place-of-image.ipad-v-rek-1 {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .place-of-image.desktop-v-rek-1 {
+    display: none;
+  }
+
+  .place-of-image.ipad-v-rek-1 {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 423px) {
-  .place-of-image {
-    /*padding: 2.4rem;*/
+  .place-of-image.mobile-v-rek-1 {
+    display: block;
+  }
+
+  .place-of-image.desktop-v-rek-1 {
+    display: none;
+  }
+
+  .place-of-image.ipad-v-rek-1 {
+    display: none;
   }
 }
 
-/*
-.place-of-image2 {
-  margin-top: -3.5px;
-}
-
-@media only screen and (max-width: 383px) {
-  .place-of-image2 {
-    margin-top: -17px;
-  }
-}*/
+/* 
+desktop
+width: 1519px;
+height: 87px;
+ipad
+width: 1024px;
+height: 87px;
+mobile
+width: 400px;
+height: 65px
+*/
