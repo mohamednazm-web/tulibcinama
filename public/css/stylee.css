@@ -166,7 +166,13 @@ body {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
-
+@media only screen and (max-width: 415px) {
+  .loader {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 6px;
+  }
+}
 .loader:before,
 .loader:after {
   content: '';
