@@ -147,8 +147,8 @@ body {
 .loader:before,
 .loader:after {
   border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2.5em;
+  height: 2.5em;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation: load7 1.8s infinite ease-in-out;
@@ -168,8 +168,6 @@ body {
 }
 @media only screen and (max-width: 415px) {
   .loader {
-    width: 2.5em;
-    height: 2.5em;
     font-size: 6px;
   }
 }
