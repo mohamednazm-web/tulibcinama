@@ -331,11 +331,11 @@ hr.beautiful-line {
   }
 }
 
-@media only screen and (max-width: 802px) {
+/*@media only screen and (max-width: 802px) {
   .reklame-2 img {
     height: 0;
   }
-}
+}*/
 
 @media only screen and (max-width: 600px) {
   .reklame-2 img {
@@ -491,6 +491,13 @@ hr.beautiful-line {
   .slider {
     width: 48rem;
     height: 33rem;
+  }
+}
+
+/* add to sass */
+@media only screen and (max-width: 42em) {
+  .slider {
+    width: 37rem;
   }
 }
 
