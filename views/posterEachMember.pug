@@ -28,18 +28,21 @@ block content
                     .card-profile-image
                       a.buttonStyle(href="#")
                         img.rounded-circle.imageMember(src=`/img/profile/${mProfile.imageProfile}`, alt="" loading="lazy")
+                        a.btn-profile.btn-num.btn-sm.btn-info.mr-4.buttonStyle(href="#")= mProfile.numOfPosters
+                        i.fa.fa-star.position-star(style="font-size:45px")
                 .card-header.text-center.border-0.pt-8.pt-md-4.pb-0.pb-md-4
                   .d-flex.justify-content-between
-                    a.btn.btn-sm.btn-info.mr-4.buttonStyle(href="#") Facebook
-                    a.btn.btn-sm.btn-default.float-right.buttonStyle(href="#") Instagram
+                    a.btn-profile.btn-sm.btn-info.mr-4.buttonStyle(href="#") بەرهەم
+                    a.btn-profile.btn-sm.btn-default.float-right.buttonStyle(href="#") نوسەر
                 .card-body.pt-0.pt-md-4
                   .row
                     .col
                       .card-profile-stats.d-flex.justify-content-center.mt-md-5
                         div
                           span.nameWriter= mProfile.memberName
-                          span.heading= mProfile.numOfPosters
-                          span.description ژمارەی بەرهەم
+                         
+                          //span.heading= mProfile.numOfPosters
+                          //span.description ژمارەی بەرهەم
                         
                   .text-center
                     hr.my-4.mline
