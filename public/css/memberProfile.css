@@ -528,7 +528,7 @@ a.text-white:focus {
   font-weight: 600;
   line-height: 1.5;
   display: inline-block;
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -549,48 +549,45 @@ a.text-white:focus {
   top: 54px;
 }
 
+@media (max-width: 1024px) {
+  .position-star {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .position-star {
+    left: 256px;
+  }
+}
+
 @media (max-width: 420px) {
   .position-star {
-    color: #ffd700;
-    position: absolute;
     left: 110px;
-    top: 54px;
   }
 }
 
 @media (max-width: 396px) {
   .position-star {
-    color: #ffd700;
-    position: absolute;
     left: 97px;
-    top: 54px;
   }
 }
 
 @media (max-width: 380px) {
   .position-star {
-    color: #ffd700;
-    position: absolute;
     left: 86px;
-    top: 54px;
   }
 }
 
 @media (max-width: 360px) {
   .position-star {
-    color: #ffd700;
-    position: absolute;
     left: 78px;
-    top: 54px;
   }
 }
 
 @media (max-width: 325px) {
   .position-star {
-    color: #ffd700;
-    position: absolute;
     left: 70px;
-    top: 54px;
   }
 }
 
@@ -609,14 +606,22 @@ a.btn-profile.btn-num.btn-sm.btn-info.mr-4 {
   }
 }
 
+@media (max-width: 1024px) {
+  a.btn-profile.btn-num.btn-sm.btn-info.mr-4 {
+    left: -323px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.btn-profile.btn-num.btn-sm.btn-info.mr-4 {
+    left: 41px;
+  }
+}
+
 @media (max-width: 420px) {
   a.btn-profile.btn-num.btn-sm.btn-info.mr-4 {
-    position: absolute;
-    left: 31px;
+    left: 36px;
     top: 27px;
-    font-size: 4rem;
-    line-height: 1.1;
-    padding: 0 0.4rem;
   }
 }
 
