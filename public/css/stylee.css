@@ -1522,9 +1522,27 @@ support for no js
 
 @media only screen and (max-width: 423px) {
   .reklame-res-container {
-    width: 422px;
+    width: 408px;
     height: 65px;
     margin-bottom: 1px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .reklame-res-container {
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .reklame-res-container {
+    width: 396px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .reklame-res-container {
+    width: 382px;
   }
 }
 
@@ -1535,9 +1553,22 @@ support for no js
   }
 }
 
+@media only screen and (max-width: 376px) {
+  .reklame-res-container {
+    width: 371px;
+    margin-bottom: 1px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .reklame-res-container {
+    width: 359px;
+  }
+}
+
 @media only screen and (max-width: 321px) {
   .reklame-res-container {
-    width: 319px;
+    width: 320px;
     margin-bottom: 0.5px;
   }
 }
