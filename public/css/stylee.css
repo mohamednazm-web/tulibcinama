@@ -1522,22 +1522,23 @@ support for no js
 
 @media only screen and (max-width: 423px) {
   .reklame-res-container {
-    width: 400px;
+    width: 422px;
     height: 65px;
+    margin-bottom: 1px;
   }
 }
 
 @media only screen and (max-width: 383px) {
   .reklame-res-container {
-    width: 341px;
-    margin-bottom: 1.8rem;
+    width: 381px;
+    margin-bottom: 1px;
   }
 }
 
 @media only screen and (max-width: 321px) {
   .reklame-res-container {
-    width: 294px;
-    margin-bottom: 0;
+    width: 319px;
+    margin-bottom: 0.5px;
   }
 }
 
