@@ -11,31 +11,20 @@ block content
         section(class='profile_container')
           div(class='profile_img_section')
             img(class='profile_img-LG' src=`/img/profile/${mProfile.imageProfile}`)
-            div(class='flag_wrapper')
+            //div(class='flag_wrapper')
               img.flag(src='/img/flag.jpg' alt='South Korean Flag')
           div(class='profile_desc_section')
             h2.profile-h2= mProfile.memberName
             h3.profile-h3= `ژمارەی بەرهەم : ${mProfile.numOfPosters}`
-            h2.profile-h2.small بایۆگرافی
+            h2.profile-h2.small
             p.description.profile-p= mProfile.description
             //.interests
               span(class='interests_item profile-span') Not defined yet
               span(class='interests_item profile-span') Not defined yet
               span(class='interests_item profile-span') Not defined yet
-        div(class='profile_info')
-          ul.profile-ul
-            li.profile-li
-              p.profile-p هەولێر
-              p.profile-p : شوێنی لەدایکبوون
-            li.profile-li
-              p.profile-p ٢٢\٢\١٩٩٩
-              p.profile-p : بەرواری لەدایکبوون
-            li.profile-li
-              p.profile-p نوسەر
-              p.profile-p : ناسراوە بە کاری
-        section.posterOne 
-        .posterOne__title(href="#") 
-            p(style="font-size:1.8rem; font-weight: bold; letter-spacing: 0;") بەرهەمەکانی
+        section.posterOne
+        .posterOne__title(href="#")
+            p(style="font-size:1.8rem; font-weight: bold; letter-spacing: 0; margin-top: -3rem;") بەرهەمەکانی
         .posters
 
             each m in member

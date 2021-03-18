@@ -31,7 +31,7 @@
 .profile_container,
 .profile_info,
 .back {
-  margin: 60px 100px 0px;
+  margin: -5px 100px 0px;
   max-width: 900px;
   display: flex;
   overflow-x: hidden;
@@ -82,9 +82,8 @@
 
 .description {
   margin-bottom: 30px;
-  margin-top: 0px;
+  margin-top: -9px;
   text-align: right;
-  font-family: 'Almarai', sans-serif;
 }
 
 .profile_img_section {
@@ -159,13 +158,14 @@
     margin: -27px 33px 0px;
   }
 
+  .profile-h2 {
+    font-size: 29px;
+    margin-top: 5rem;
+  }
+
   .profile-h3 {
     font-size: 19px;
     font-weight: 500;
-  }
-
-  .profile-h2 {
-    font-size: 29px;
   }
 
   .profile_container {
@@ -209,6 +209,25 @@
     margin-left: 33px;
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .description {
+    margin-top: -58px;
+  }
+
+  .profile_img-LG {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-h2 {
+    font-size: 27px;
+  }
+
+  .profile-h3 {
+    font-size: 18px;
   }
 }
 
