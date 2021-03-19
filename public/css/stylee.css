@@ -1543,20 +1543,20 @@ support for no js
 @media only screen and (max-width: 385px) {
   .reklame-res-container {
     width: 382px;
-    margin-bottom: 13px;
   }
 }
 
 @media only screen and (max-width: 383px) {
   .reklame-res-container {
     width: 381px;
+    margin-bottom: 1px;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .reklame-res-container {
-    width: 370px;
-    margin-bottom: 13px;
+    width: 371px;
+    margin-bottom: 1px;
   }
 }
 
