@@ -24,7 +24,10 @@ block content
               span(class='interests_item profile-span') Not defined yet
         section.posterOne
         .posterOne__title(href="#")
-            p(style="font-size:1.8rem; font-weight: bold; letter-spacing: 0; margin-top: -3rem;") بەرهەمەکانی
+            if mProfile.numOfPosters > 0
+              p(style="font-size:1.8rem; font-weight: bold; letter-spacing: 0; margin-top: -3rem;") بەرهەمەکانی
+            else
+              p هیچ بەرهەمێک نەدۆزراوە لە ئێستادا
         .posters
 
             each m in member
