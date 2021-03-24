@@ -5,14 +5,21 @@ block content
       p پرۆفایلەکان
     section.profiles
         .profiles__title(href="#")
-          p 
+          p
         .pros
             each p in developer
-                a.pro(href=`${p.href}`)
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
-                  .realtors__details
-                    p.realkljtors__sold= p.memberName
-                    h4.heading-4.heading-4--light= p.typeAction
+                if p.description
+                  a.pro(href=`/member/${p.slugMember}`)
+                    img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    .realtors__details
+                      p.realkljtors__sold= p.memberName
+                      h4.heading-4.heading-4--light= p.typeAction
+                else
+                  a.pro(href=`${p.href}`)
+                    img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    .realtors__details
+                      p.realkljtors__sold= p.memberName
+                      h4.heading-4.heading-4--light= p.typeAction
     section.profiles
         .profiles__title(href="#")
           p نەخشاندنی پۆستەرەکان لەلایەن
@@ -25,10 +32,10 @@ block content
     section.profiles
         .profiles__title(href="#")
           p وەرگێڕ و نووسەرەکان
-        .pros 
+        .pros
             each p in profile
                 a.pro(href=`/member/${p.slugMember}`)
                   img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="")
                   .realtors__details
                     p.realkljtors__sold= p.memberName
-                    h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`    
+                    h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`
