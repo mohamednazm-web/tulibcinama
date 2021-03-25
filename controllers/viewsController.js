@@ -14,8 +14,8 @@ exports.posters = catchAsync(async (req, res, next) => {
     .sort({ _id: -1 })
     .limit(14);
   const posterTwo = await AllPosters.find({
-    typeVariety: {
-      $eq: 'variety'
+    typeSeries: {
+      $eq: 'series'
     }
   })
     .sort({ _id: -1 })
