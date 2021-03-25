@@ -5,18 +5,21 @@ const AppError = require('../utils/appError');
 
 // heloo
 exports.posters = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const posterOne = await AllPosters.find({
-    typeFilmNew: {
-      //$eq: "film"
-      $eq: 'new'
+    typeFilm: {
+      $eq: 'film'
+      //$eq: 'new'
     }
-  }).limit(14);
+  })
+    .sort({ _id: -1 })
+    .limit(14);
   const posterTwo = await AllPosters.find({
-    typeChamkakan: {
-      $eq: 'chamkakan'
+    typeVariety: {
+      $eq: 'variety'
     }
-  }).limit(14); // it must be 14
+  })
+    .sort({ _id: -1 })
+    .limit(14); // it must be 14
 
   const profile = await Profile.find({
     numOfPosters: {
@@ -36,7 +39,7 @@ exports.posters = catchAsync(async (req, res, next) => {
 
 exports.getAllPosters = catchAsync(async (req, res, next) => {
   // 1) Get tour data from collection
-  const allPosters = await AllPosters.find();
+  const allPosters = await AllPosters.find().sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -146,7 +149,7 @@ exports.getFilm = catchAsync(async (req, res, next) => {
     typeFilm: {
       $eq: 'film'
     }
-  });
+  }).sort({ _id: -1 });
 
   res.status(200).render('film', {
     title: 'film page',
@@ -160,7 +163,7 @@ exports.getTop = catchAsync(async (req, res, next) => {
     typeTop: {
       $eq: 'top'
     }
-  });
+  }).sort({ _id: -1 });
 
   res.status(200).render('top', {
     title: 'Top 250 movie rated',
@@ -174,7 +177,7 @@ exports.getVariety = catchAsync(async (req, res, next) => {
     typeVariety: {
       $eq: 'variety'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -190,7 +193,7 @@ exports.getDirector = catchAsync(async (req, res, next) => {
     typeDirector: {
       $eq: 'director'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -206,7 +209,7 @@ exports.getCompany = catchAsync(async (req, res, next) => {
     typeCompany: {
       $eq: 'company'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -222,7 +225,7 @@ exports.getGift = catchAsync(async (req, res, next) => {
     typeGift: {
       $eq: 'gift'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -238,7 +241,7 @@ exports.getChashn = catchAsync(async (req, res, next) => {
     typeChashn: {
       $eq: 'chashn'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -254,7 +257,7 @@ exports.getSeries = catchAsync(async (req, res, next) => {
     typeSeries: {
       $eq: 'series'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -270,7 +273,7 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
     typeChamkakan: {
       $eq: 'chamkakan'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
@@ -286,7 +289,7 @@ exports.getActor = catchAsync(async (req, res, next) => {
     typeActor: {
       $eq: 'actor'
     }
-  });
+  }).sort({ _id: -1 });
 
   // 2) Build template
   // 3) Render that template using tour data from 1)
