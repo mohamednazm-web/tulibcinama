@@ -5,12 +5,7 @@ const AppError = require('../utils/appError');
 
 // heloo
 exports.posters = catchAsync(async (req, res, next) => {
-  const posterOne = await AllPosters.find({
-    typeFilm: {
-      $eq: 'film'
-      //$eq: 'new'
-    }
-  })
+  const posterOne = await AllPosters.find()
     .sort({ _id: -1 })
     .limit(14);
   const posterTwo = await AllPosters.find({
@@ -27,8 +22,6 @@ exports.posters = catchAsync(async (req, res, next) => {
     }
   });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('home', {
     title: 'home page',
     posterOne,
@@ -38,11 +31,8 @@ exports.posters = catchAsync(async (req, res, next) => {
 });
 
 exports.getAllPosters = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const allPosters = await AllPosters.find().sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('allPosters', {
     title: 'all posters',
     allPosters
@@ -158,7 +148,6 @@ exports.getFilm = catchAsync(async (req, res, next) => {
 });
 
 exports.getTop = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const top = await AllPosters.find({
     typeTop: {
       $eq: 'top'
@@ -172,15 +161,12 @@ exports.getTop = catchAsync(async (req, res, next) => {
 });
 
 exports.getVariety = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const variety = await AllPosters.find({
     typeVariety: {
       $eq: 'variety'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('variety', {
     title: 'variety',
     variety
@@ -188,15 +174,12 @@ exports.getVariety = catchAsync(async (req, res, next) => {
 });
 
 exports.getDirector = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const director = await AllPosters.find({
     typeDirector: {
       $eq: 'director'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('director', {
     title: 'director',
     director
@@ -204,15 +187,12 @@ exports.getDirector = catchAsync(async (req, res, next) => {
 });
 
 exports.getCompany = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const company = await AllPosters.find({
     typeCompany: {
       $eq: 'company'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('company', {
     title: 'company',
     company
@@ -220,15 +200,12 @@ exports.getCompany = catchAsync(async (req, res, next) => {
 });
 
 exports.getGift = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const gift = await AllPosters.find({
     typeGift: {
       $eq: 'gift'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('gift', {
     title: 'gift',
     gift
@@ -236,15 +213,12 @@ exports.getGift = catchAsync(async (req, res, next) => {
 });
 
 exports.getChashn = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const chashn = await AllPosters.find({
     typeChashn: {
       $eq: 'chashn'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('chashn', {
     title: 'chashn',
     chashn
@@ -252,15 +226,12 @@ exports.getChashn = catchAsync(async (req, res, next) => {
 });
 
 exports.getSeries = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const series = await AllPosters.find({
     typeSeries: {
       $eq: 'series'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('series', {
     title: 'series',
     series
@@ -268,15 +239,12 @@ exports.getSeries = catchAsync(async (req, res, next) => {
 });
 
 exports.getChamkakan = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const chamkakan = await AllPosters.find({
     typeChamkakan: {
       $eq: 'chamkakan'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('chamkakan', {
     title: 'chamkakan',
     chamkakan
@@ -284,15 +252,12 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
 });
 
 exports.getActor = catchAsync(async (req, res, next) => {
-  // 1) Get tour data from collection
   const actor = await AllPosters.find({
     typeActor: {
       $eq: 'actor'
     }
   }).sort({ _id: -1 });
 
-  // 2) Build template
-  // 3) Render that template using tour data from 1)
   res.status(200).render('actor', {
     title: 'actor',
     actor
@@ -303,7 +268,6 @@ exports.createPoster = catchAsync(async (req, res, next) => {
   const doc = await AllPosters.create(req.body);
 
   res.status(201).json({
-    // 201 stands for to create new tour
     status: 'success',
     data: {
       data: doc

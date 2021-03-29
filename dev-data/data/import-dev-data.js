@@ -24,8 +24,12 @@ mongoose
 
 // READ JSON FILE
 
-const allPosters = JSON.parse(fs.readFileSync(`${__dirname}/allPosters.json`, 'utf-8'));
-const profiles = JSON.parse(fs.readFileSync(`${__dirname}/profiles.json`, 'utf-8'));
+const allPosters = JSON.parse(
+  fs.readFileSync(`${__dirname}/allPosters.json`, 'utf-8')
+);
+const profiles = JSON.parse(
+  fs.readFileSync(`${__dirname}/profiles.json`, 'utf-8')
+);
 
 // IMPORT DATA INTO DB
 const importData = async () => {
@@ -66,12 +70,10 @@ if (process.argv[2] === '--import') {
 
 /////////////////////////////////////////
 
-//la xwarawa plusaka dagraw consoleki tr bkawa pashan awana bnusa 
+//la xwarawa plusaka dagraw consoleki tr bkawa pashan awana bnusa
 // node .\dev-data\data\import-dev-data.js
 // node .\dev-data\data\import-dev-data.js --import
 // node .\dev-data\data\import-dev-data.js --delete
-
-
 
 /*const fs = require("fs");
 const mongoose = require("mongoose");
