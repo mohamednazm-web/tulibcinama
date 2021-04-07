@@ -81,7 +81,8 @@
 .description {
   margin-bottom: 30px;
   margin-top: -9px;
-  text-align: right;
+  text-align: justify;
+  text-align-last: right;
 }
 
 .profile_img_section {
