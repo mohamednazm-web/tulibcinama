@@ -15,7 +15,9 @@ block content
               img.flag(src='/img/flag.jpg' alt='South Korean Flag')
           div(class='profile_desc_section')
             h2.profile-h2= mProfile.memberName
-            h3.profile-h3= `ژمارەی بەرهەم : ${mProfile.numOfPosters}`
+
+            include _numberOfPosters
+
             h2.profile-h2.small
             p.description.profile-p= mProfile.description
             //.interests
