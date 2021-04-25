@@ -227,6 +227,8 @@ hr.beautiful-line {
 .realkljtors__sold {
   font-weight: bold;
   font-size: 1.8rem;
+  /* add to sass*/
+  margin-top: -1rem;
 }
 
 .swiper {
