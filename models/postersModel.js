@@ -66,6 +66,9 @@ const posterSchema = new mongoose.Schema({
   },
   idPoster: {
     type: String
+  },
+  hasViewd: {
+    type: Number
   }
 });
 

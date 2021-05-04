@@ -16,8 +16,18 @@ block content
           div(class='profile_desc_section')
             h2.profile-h2= mProfile.memberName
 
-            include _numberOfPosters
-
+            - var n = 0;
+              while n < member.length
+                - var numOfPoster = n++
+            h3.profile-h3= `ژمارەی بەرهەم : ${n}`
+            script(type='text/javascript').
+              function local (arr) {
+              var i;
+              i = "#{numOfPosters}";
+              localStorage.setItem('xyz', i);
+              }
+              console.log('stored');
+              local();
             h2.profile-h2.small
             p.description.profile-p= mProfile.description
             //.interests

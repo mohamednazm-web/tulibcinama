@@ -117,6 +117,8 @@ app.use((req, res, next) => {
 
 app.use('/', viewRouter);
 
+app.use('/api/v1/posters', viewRouter);
+
 //app.use("/api/v1/tours", tourRouter); // using this middle wear for this rout // after all of them is comes
 //app.use("/api/v1/users", userRouter);
 //app.use("/api/v1/reviews", reviewRouter);

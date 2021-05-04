@@ -1,13 +1,20 @@
 const AllPosters = require('../models/postersModel');
+const Allviews = require('../models/viewsModel');
 const Profile = require('../models/profilesModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
-// heloo
 exports.posters = catchAsync(async (req, res, next) => {
+  // counting is start at 5/4/2021
+  // only visited with tulipcinama.com
+  await Allviews.updateOne({ $inc: { homePageHasView: 1 } });
+
+  const views = await Allviews.find({});
+
   const posterOne = await AllPosters.find()
     .sort({ _id: -1 })
     .limit(14);
+
   const posterTwo = await AllPosters.find({
     typeSeries: {
       $eq: 'series'
@@ -22,6 +29,14 @@ exports.posters = catchAsync(async (req, res, next) => {
     }
   });
 
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: posterOne.length,
+  //   views,
+  //   data: {
+  //     posters: posterOne
+  //   }
+  // });
   res.status(200).render('home', {
     title: 'home page',
     posterOne,
@@ -44,12 +59,27 @@ exports.getArticle = catchAsync(async (req, res, next) => {
   const article = await AllPosters.findOne({
     slug: req.params.slug
   });
+
+  // article has viewed
+  await AllPosters.updateOne(
+    // find record with slug name
+    { slug: req.params.slug },
+    // increment it's property called "ran" by 1
+    { $inc: { hasViewd: 1 } }
+  );
+
   if (!article) {
     return next(new AppError('There is no article with that name.', 404));
   }
 
-  // 2) Build template
-  // 3) Render template using data from 1)
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: article.length,
+  //   data: {
+  //     posters: article
+  //   }
+  // });
+
   res.status(200).render('article', {
     title: `${article.title} Poster`,
     article
@@ -125,7 +155,6 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
   if (!member) {
     return next(new AppError('There is no article with that name.', 404));
   }
-
   res.status(200).render('posterEachMember', {
     title: `${member.title} Poster`,
     member,

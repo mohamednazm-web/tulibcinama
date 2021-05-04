@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const AllPosters = require('../../models/postersModel');
 const Profile = require('../../models/profilesModel');
+const Allviews = require('../../models/viewsModel');
 
 dotenv.config({
   path: './config.env'
@@ -31,6 +32,8 @@ const profiles = JSON.parse(
   fs.readFileSync(`${__dirname}/profiles.json`, 'utf-8')
 );
 
+const views = JSON.parse(fs.readFileSync(`${__dirname}/views.json`, 'utf-8'));
+
 // IMPORT DATA INTO DB
 const importData = async () => {
   try {
@@ -41,6 +44,7 @@ const importData = async () => {
     //await Review.create(reviews);
     await AllPosters.create(allPosters);
     await Profile.create(profiles);
+    //await Allviews.create(views);
     //await Article.create(articles);
     console.log('Data successfully loaded!');
   } catch (err) {
