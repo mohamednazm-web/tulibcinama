@@ -1617,6 +1617,11 @@ support for no js
   }
 }
 
+.headerArticle.i.fa.fa-eye {
+  display: block;
+  margin-top: 1.2rem;
+}
+
 /*
 desktop
 width: 1519px;
