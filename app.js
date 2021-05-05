@@ -83,13 +83,13 @@ app.use(compression());
 // Body parser, reading data from body into req.body
 app.use(
   express.json({
-    limit: '10kb'
+    limit: '30000kb'
   })
 ); // its need when you use post api
 app.use(
   express.urlencoded({
     extended: true,
-    limit: '10kb'
+    limit: '30000kb'
   })
 );
 app.use(cookieParser());
