@@ -11,7 +11,7 @@ router.get('/profiles', viewsController.getProfiles);
 
 router.get('/member/:slugMember', viewsController.getPosterEachMember);
 
-router.get('/all', viewsController.getAllPosters);
+router.get('/updateAllThings', viewsController.updatedAllThings);
 
 router.get('/film', viewsController.getFilm);
 

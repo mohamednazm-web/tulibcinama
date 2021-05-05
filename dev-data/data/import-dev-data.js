@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const AllPosters = require('../../models/postersModel');
 const Profile = require('../../models/profilesModel');
 const Allviews = require('../../models/viewsModel');
+const Allcalculate = require('../../models/calculateModel');
 
 dotenv.config({
   path: './config.env'
@@ -32,6 +33,10 @@ const profiles = JSON.parse(
   fs.readFileSync(`${__dirname}/profiles.json`, 'utf-8')
 );
 
+const calculate = JSON.parse(
+  fs.readFileSync(`${__dirname}/totalNumPoster.json`, 'utf-8')
+);
+
 const views = JSON.parse(fs.readFileSync(`${__dirname}/views.json`, 'utf-8'));
 
 // IMPORT DATA INTO DB
@@ -44,6 +49,7 @@ const importData = async () => {
     //await Review.create(reviews);
     await AllPosters.create(allPosters);
     await Profile.create(profiles);
+    await Allcalculate.create(calculate);
     //await Allviews.create(views);
     //await Article.create(articles);
     console.log('Data successfully loaded!');

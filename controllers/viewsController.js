@@ -1,6 +1,8 @@
 const AllPosters = require('../models/postersModel');
 const Allviews = require('../models/viewsModel');
 const Profile = require('../models/profilesModel');
+const Calculate = require('../models/calculateModel');
+
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
@@ -45,12 +47,46 @@ exports.posters = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getAllPosters = catchAsync(async (req, res, next) => {
-  const allPosters = await AllPosters.find().sort({ _id: -1 });
+exports.updatedAllThings = catchAsync(async (req, res, next) => {
+  //const allPosters = await AllPosters.find().sort({ _id: -1 });
+  let finalRes;
+  let arr = [{ memberNameEnglish: 'English', numOfPosters: 5 }];
+  const allPoster = await AllPosters.find({}).select('memberNameEnglish');
+  //console.log(allPoster);
+  await Profile.find().then(memes => {
+    memes.forEach(meme => {
+      //console.log(meme.memberNameEnglish);
+      const res = allPoster.filter(
+        el => el.memberNameEnglish === meme.memberNameEnglish
+      );
+      finalRes = res.length;
+      arr.push({
+        memberNameEnglish: meme.memberNameEnglish,
+        numOfPosters: finalRes
+      });
+    });
+  });
 
-  res.status(200).render('allPosters', {
-    title: 'all posters',
-    allPosters
+  for (var i = 1; i < arr.length; i++) {
+    let resProfilee = await Profile.findOne({
+      memberNameEnglish: {
+        $eq: arr[i].memberNameEnglish
+      }
+    });
+    //console.log(resProfilee);
+    await resProfilee.updateOne({
+      $set: { numOfPosters: arr[i].numOfPosters }
+    });
+  }
+
+  const updatedProfile = await Profile.find({});
+
+  res.status(200).json({
+    status: 'success',
+    results: updatedProfile.length,
+    data: {
+      profile: updatedProfile
+    }
   });
 });
 
@@ -87,43 +123,42 @@ exports.getArticle = catchAsync(async (req, res, next) => {
 });
 
 exports.getProfiles = catchAsync(async (req, res, next) => {
-  // 1) Get the data, for the requested tour (including reviews and guides)
-  const profile = await Profile.find({
-    numOfPosters: {
-      $gte: 5
-    },
-    typeNaxshandn: {
-      $ne: 'naxshandn'
-    },
-    typeDeveloper: {
-      $ne: 'developer'
-    }
-  });
+  const profile = await Profile.find({}).sort({ numOfPosters: -1 });
+  const filterProfile = profile.filter(
+    el =>
+      el.numOfPosters >= 5 &&
+      el.typeNaxshandn !== 'naxshand' &&
+      el.typeDeveloper !== 'developer'
+  );
 
-  if (!profile) {
+  if (!filterProfile) {
     return next(new AppError('There is no profile with that name.', 404));
   }
 
-  const naxshandn = await Profile.find({
-    typeNaxshandn: {
-      $eq: 'naxshandn'
-    },
-    typeDeveloper: {
-      $ne: 'developer'
-    }
-  });
+  const naxshandn = await Profile.find({});
+  const filterNaxshandn = naxshandn.filter(
+    el => el.typeNaxshandn === 'naxshandn'
+  );
 
-  const developer = await Profile.find({
-    typeDeveloper: {
-      $eq: 'developer'
-    }
-  });
+  const developer = await Profile.find({});
+  const filterDeveloper = developer.filter(
+    el => el.typeDeveloper === 'developer'
+  );
 
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: filterProfile.length,
+  //   data: {
+  //     profile: filterProfile,
+  //     naxshandn: filterNaxshandn,
+  //     developer: filterDeveloper
+  //   }
+  // });
   res.status(200).render('profile', {
     title: `${profile.title} Poster`,
-    profile,
-    naxshandn,
-    developer
+    profile: filterProfile,
+    naxshandn: filterNaxshandn,
+    developer: filterDeveloper
   });
 });
 
@@ -134,31 +169,29 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
     }
   });
 
+  // console.log(member.length);
+
   const mProfile = await Profile.findOne({
     memberNameEnglish: {
       $eq: req.params.slugMember
     }
   });
 
-  const profile = await Profile.find({
-    numOfPosters: {
-      $gte: 5
-    },
-    typeNaxshandn: {
-      $ne: 'naxshandn'
-    },
-    typeDeveloper: {
-      $ne: 'developer'
-    }
-  });
-
   if (!member) {
     return next(new AppError('There is no article with that name.', 404));
   }
+
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: mProfile.length,
+  //   data: {
+  //     mProfile
+  //   }
+  // });
+
   res.status(200).render('posterEachMember', {
     title: `${member.title} Poster`,
     member,
-    profile,
     mProfile
   });
 });
