@@ -16,7 +16,7 @@ block content
           h1.headerArticle(dir='rtl')= `وەرگێڕانی: ${article.translator}`
         if(typeof article.hasViewd === 'undefined')
           h1.headerArticle.i.fa.fa-eye= ` بینین ${0}`
-        else
+        else if(article.hasViewd >= 200)
           h1.headerArticle.i.fa.fa-eye= ` بینین ${article.hasViewd}`
         - const parapraphs = article.description.split('\n');
       each p in parapraphs
