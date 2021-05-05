@@ -12,9 +12,12 @@ block content
       article
         h1.headerArticle= ` ${article.nameF}`
         h1.headerArticle= `نوسینی: ${article.writingN}`
-        h1.headerArticle.i.fa.fa-eye= `بینین ${article.hasViewd}`
         if article.translator
           h1.headerArticle(dir='rtl')= `وەرگێڕانی: ${article.translator}`
+        if(typeof article.hasViewd === 'undefined')
+          h1.headerArticle.i.fa.fa-eye= ` بینین ${0}`
+        else
+          h1.headerArticle.i.fa.fa-eye= ` بینین ${article.hasViewd}`
         - const parapraphs = article.description.split('\n');
       each p in parapraphs
         p.description__text
