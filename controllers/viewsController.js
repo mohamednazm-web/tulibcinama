@@ -122,7 +122,7 @@ exports.getArticle = catchAsync(async (req, res, next) => {
 
   if (!article) {
     return next(new AppError('There is no article with that name.', 404));
-  }
+  } // hello
 
   // res.status(200).json({
   //   status: 'success',
