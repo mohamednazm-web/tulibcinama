@@ -1,11 +1,27 @@
 const AllPosters = require('../models/postersModel');
 const Allviews = require('../models/viewsModel');
 const Profile = require('../models/profilesModel');
-const Calculate = require('../models/calculateModel');
+//const Calculate = require('../models/calculateModel');
 
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
+// step 1
+// for creating comment system
+// use this structure below
+// https://stackoverflow.com/questions/38035612/mongo-mongoose-relationship-storage
+
+// step 2 // hawl da sarata aw stepay tatbiq bka.
+// tebini hasviewd hich keshay nya har story damenetawa.
+// collection la bo hamw typakan drwst bka w tawaw
+
+// step 3
+// wa bashi descripton jya bkawa.
+// wata collectionaki nwe labo description drwst bkay.
+
+// step 4 
+// yak schemay drwst ka relation drwst bkatn la bo hamw bashakan aw kat datwani pageak ba tanha drwst bkay ba filter wakw website beenar ba filter shtakan hal bzheritn
+// step 4 wata datwani hamw aw shtanay ka datay zor dagrn saperatyan bkay
 exports.posters = catchAsync(async (req, res, next) => {
   // counting is start at 5/4/2021
   // only visited with tulipcinama.com
@@ -31,20 +47,20 @@ exports.posters = catchAsync(async (req, res, next) => {
     }
   });
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: posterOne.length,
-  //   views,
-  //   data: {
-  //     posters: posterOne
-  //   }
-  // });
-  res.status(200).render('home', {
-    title: 'home page',
-    posterOne,
-    posterTwo,
-    profile
+  res.status(200).json({
+    status: 'success',
+    results: posterOne.length,
+    views,
+    data: {
+      posters: posterOne
+    }
   });
+  // res.status(200).render('home', {
+  //   title: 'home page',
+  //   posterOne,
+  //   posterTwo,
+  //   profile
+  // });
 });
 
 exports.updatedAllThings = catchAsync(async (req, res, next) => {
@@ -108,18 +124,18 @@ exports.getArticle = catchAsync(async (req, res, next) => {
     return next(new AppError('There is no article with that name.', 404));
   }
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: article.length,
-  //   data: {
-  //     posters: article
-  //   }
-  // });
-
-  res.status(200).render('article', {
-    title: `${article.title} Poster`,
-    article
+  res.status(200).json({
+    status: 'success',
+    results: article.length,
+    data: {
+      posters: article
+    }
   });
+
+  // res.status(200).render('article', {
+  //   title: `${article.title} Poster`,
+  //   article
+  // });
 });
 
 exports.getProfiles = catchAsync(async (req, res, next) => {

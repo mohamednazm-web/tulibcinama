@@ -43,8 +43,7 @@ const posterSchema = new mongoose.Schema({
   slug: String,
   photo: {
     type: String,
-    default: 'default.jpg',
-    unique: true
+    default: 'default.jpg'
   },
   memberNameEnglish: {
     type: String
