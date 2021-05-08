@@ -19,7 +19,7 @@ const AppError = require('../utils/appError');
 // wa bashi descripton jya bkawa.
 // wata collectionaki nwe labo description drwst bkay.
 
-// step 4 
+// step 4
 // yak schemay drwst ka relation drwst bkatn la bo hamw bashakan aw kat datwani pageak ba tanha drwst bkay ba filter wakw website beenar ba filter shtakan hal bzheritn
 // step 4 wata datwani hamw aw shtanay ka datay zor dagrn saperatyan bkay
 exports.posters = catchAsync(async (req, res, next) => {
@@ -47,14 +47,14 @@ exports.posters = catchAsync(async (req, res, next) => {
     }
   });
 
-  res.status(200).json({
-    status: 'success',
-    results: posterOne.length,
-    views,
-    data: {
-      posters: posterOne
-    }
-  });
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: posterOne.length,
+  //   views,
+  //   data: {
+  //     posters: posterOne
+  //   }
+  // });
   // res.status(200).render('home', {
   //   title: 'home page',
   //   posterOne,
@@ -97,13 +97,13 @@ exports.updatedAllThings = catchAsync(async (req, res, next) => {
 
   const updatedProfile = await Profile.find({});
 
-  res.status(200).json({
-    status: 'success',
-    results: updatedProfile.length,
-    data: {
-      profile: updatedProfile
-    }
-  });
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: updatedProfile.length,
+  //   data: {
+  //     profile: updatedProfile
+  //   }
+  // });
 });
 
 exports.getArticle = catchAsync(async (req, res, next) => {
@@ -124,13 +124,13 @@ exports.getArticle = catchAsync(async (req, res, next) => {
     return next(new AppError('There is no article with that name.', 404));
   }
 
-  res.status(200).json({
-    status: 'success',
-    results: article.length,
-    data: {
-      posters: article
-    }
-  });
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: article.length,
+  //   data: {
+  //     posters: article
+  //   }
+  // });
 
   // res.status(200).render('article', {
   //   title: `${article.title} Poster`,
