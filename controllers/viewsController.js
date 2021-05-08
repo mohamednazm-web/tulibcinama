@@ -55,12 +55,12 @@ exports.posters = catchAsync(async (req, res, next) => {
   //     posters: posterOne
   //   }
   // });
-  // res.status(200).render('home', {
-  //   title: 'home page',
-  //   posterOne,
-  //   posterTwo,
-  //   profile
-  // });
+  res.status(200).render('home', {
+    title: 'home page',
+    posterOne,
+    posterTwo,
+    profile
+  });
 });
 
 exports.updatedAllThings = catchAsync(async (req, res, next) => {
@@ -132,10 +132,10 @@ exports.getArticle = catchAsync(async (req, res, next) => {
   //   }
   // });
 
-  // res.status(200).render('article', {
-  //   title: `${article.title} Poster`,
-  //   article
-  // });
+  res.status(200).render('article', {
+    title: `${article.title} Poster`,
+    article
+  });
 });
 
 exports.getProfiles = catchAsync(async (req, res, next) => {
