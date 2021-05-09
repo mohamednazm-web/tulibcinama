@@ -4,20 +4,20 @@ block content
     include _placeOfImage
     section.posterOne
         .posterOne__title(href="#")
-            p نواندنکاران
+            p.top_title_poster نواندنکاران
         .posters
             each poster in actor
                 .poster_container_nice
                     .card_poster_nice
-                        a(href='#')
-                            .img1(style=`background-image:url(${poster.idPoster});`)
-                            //.img2
-                            .text= poster.description
-                        a(href='#')
-                            .catagory= poster.typeActor
+                        
+                        a(href=`/movies/${poster.slug}`).img1(style=`background-image:url(${poster.idPoster});`)
+                        //.img2(style=`background-image:url(${poster.idPoster});`)
+                        a(href=`/movies/${poster.slug}`).text= poster.description
+                        a(href=`/movies/${poster.slug}`)
+                            .catagory Consepts
                                 i.fas.fa-film
-                        a(href='#')
+                        a(href=`/movies/${poster.slug}`)
                             .views= poster.hasViewd
                                 i.far.fa-eye
-                    .card_poster_other
+                    a(href=`/movies/${poster.slug}`).card_poster_other
                         p.poster__titleFilm= poster.title
