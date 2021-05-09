@@ -1622,6 +1622,335 @@ support for no js
   margin-top: 1.2rem;
 }
 
+/* poster design*/
+
+.card_poster_nice a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fas.fa-film,
+.far.fa-eye {
+  margin-left: 5px;
+}
+
+.card_poster_nice {
+  position: relative;
+  overflow: hidden;
+  width: 202px;
+  height: 313px;
+  background: #2f9b9a;
+  border: 5px solid #2f9b9a;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #2f9b9a;
+  /*box-shadow: 0 0 10px #2a264f;*/
+}
+
+.card_poster_nice .img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*background-image: url(http://cima4u.tv/wp-content/uploads/1-71.jpg);*/
+  background-size: 196px 305px;
+  background-position: left top;
+  transition: all 0.5s ease-in-out;
+}
+
+.card_poster_nice .img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-image: url(http://cima4u.tv/wp-content/uploads/1-71.jpg);
+  background-size: 196px 305px;
+  background-position: left bottom;
+  transition: all 0.5s ease-in-out;
+}
+
+.card_poster_nice .text {
+  position: absolute;
+  bottom: 82px;
+  height: 0px;
+  padding: 17px 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  transform: rotate(90deg);
+  transform-origin: 0 100px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  /*! overflow: hidden; */
+  /*! text-overflow: ellipsis; */
+  /*! display: -webkit-box; */
+  /*-webkit-line-clamp: 3;*/
+  /*! -webkit-box-orient: vertical; */
+  text-align: right;
+  /*! justify-content: ; */
+  text-align: justify;
+  text-align-last: right;
+  font-weight: 700;
+}
+
+.card_poster_other .poster__titleFilm {
+  margin-top: 0.5rem;
+  /*color: #69aa6f;*/
+  color: #2f9b9a;
+}
+
+.card_poster_nice .catagory {
+  position: absolute;
+  left: 10px;
+  top: 47px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  background: #2a264f;
+  color: #fff;
+  border-radius: 5px;
+  transform: translate(-160px, 0);
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+
+.card_poster_nice .views {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  background: #8b2463;
+  color: #fff;
+  border-radius: 5px;
+  transform: translate(-160px, 0);
+  transition: all 0.5s ease 0.15s;
+}
+
+/*********/
+
+.card_poster_nice:hover .img1 {
+  transform: rotate(10deg) scale(1.3) translate(20px, 0);
+  transform-origin: 300px 300px;
+  opacity: 0.5;
+}
+
+.card_poster_nice:hover .img2 {
+  transform: rotate(90deg) translate(0px, 150px);
+  transform-origin: -20px 200px;
+}
+
+.card_poster_nice:hover .text {
+  opacity: 0.8;
+  transform: rotate(0deg);
+}
+
+.card_poster_nice:hover .views,
+.card_poster_nice:hover .catagory {
+  transform: translate(0);
+}
+/*************/
+
+.card_poster_nice:active .img1 {
+  transform: rotate(10deg) scale(1.3) translate(20px, 0);
+  transform-origin: 300px 300px;
+  opacity: 0.5;
+}
+
+.card_poster_nice:active .img2 {
+  transform: rotate(90deg) translate(0px, 150px);
+  transform-origin: -20px 200px;
+}
+
+.card_poster_nice:active .text {
+  opacity: 0.8;
+  transform: rotate(0deg);
+}
+
+.card_poster_nice:active .views,
+.card_poster_nice:active .catagory {
+  transform: translate(0);
+}
+
+@media only screen and (max-width: 1001px) {
+  .card_poster_nice {
+    width: 156px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 148px 305px;
+  }
+}
+
+@media only screen and (max-width: 981px) {
+  .card_poster_nice {
+    width: 184px;
+  }
+
+  .card_poster_nice .img1 {
+    background-size: 172px 305px;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .card_poster_nice {
+    width: 166px;
+  }
+
+  .card_poster_nice .img1 {
+    background-size: 154px 305px;
+  }
+}
+
+@media only screen and (max-width: 821px) {
+  .card_poster_nice {
+    width: 192px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 180px 305px;
+  }
+}
+
+@media only screen and (max-width: 773px) {
+  .card_poster_nice {
+    width: 178px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 166px 305px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .card_poster_nice {
+    width: 158px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 146px 305px;
+  }
+}
+
+@media only screen and (max-width: 661px) {
+  .card_poster_nice {
+    width: 204px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 192px 305px;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .card_poster_nice {
+    width: 185px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 173px 305px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .card_poster_nice {
+    width: 174px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 162px 305px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .card_poster_nice {
+    width: 158px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 156px 305px;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .card_poster_nice {
+    width: 207px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 195px 305px;
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  .card_poster_nice {
+    width: 197px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 185px 305px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .card_poster_nice {
+    width: 189px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 176px 305px;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .card_poster_nice {
+    width: 182px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 170px 305px;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  .card_poster_nice {
+    width: 174px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 162px 305px;
+  }
+}
+
+@media only screen and (max-width: 379px) {
+  .card_poster_nice {
+    width: 169px;
+    height: 290px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 157px 305px;
+  }
+}
+
+@media only screen and (max-width: 364px) {
+  .card_poster_nice {
+    width: 164px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 152px 305px;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+  .card_poster_nice {
+    width: 161px;
+    height: 287px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 159px 305px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .card_poster_nice {
+    width: 149px;
+    height: 271px;
+  }
+  .card_poster_nice .img1 {
+    background-size: 137px 305px;
+  }
+}
 /*
 desktop
 width: 1519px;

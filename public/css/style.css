@@ -996,7 +996,7 @@ hr.beautiful-line {
 
 @media only screen and (max-width: 22em) {
   .poster__img {
-    width: 120px;
+    width: 146px; /* add to sass */
     height: 191px;
   }
 }
