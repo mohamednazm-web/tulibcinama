@@ -10,10 +10,10 @@ block content
             each poster in chamkakan
                 .poster_container_nice
                     .card_poster_nice
-                        a(href=`/movies/${poster.slug}`)
-                            .img1(style=`background-image:url(${poster.idPoster});`)
-                            //.img2(style=`background-image:url(${poster.idPoster});`)
-                            .text= poster.description
+                        
+                        .img1(style=`background-image:url(${poster.idPoster});`)
+                        //.img2(style=`background-image:url(${poster.idPoster});`)
+                        .text= poster.description
                         a(href=`/movies/${poster.slug}`)
                             .catagory Consepts
                                 i.fas.fa-film
