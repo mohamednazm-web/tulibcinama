@@ -1889,6 +1889,7 @@ support for no js
 @media only screen and (max-width: 424px) {
   .card_poster_nice {
     width: 189px;
+    margin-left: -9px;
   }
   .card_poster_nice .img1 {
     background-size: 176px 305px;
@@ -1944,8 +1945,9 @@ support for no js
 
 @media only screen and (max-width: 340px) {
   .card_poster_nice {
-    width: 149px;
+    width: 153px;
     height: 271px;
+    margin-left: -6px;
   }
   .card_poster_nice .img1 {
     background-size: 137px 305px;
