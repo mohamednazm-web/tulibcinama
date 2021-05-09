@@ -1953,6 +1953,11 @@ support for no js
     background-size: 137px 305px;
   }
 }
+
+.top_title_poster {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
 /*
 desktop
 width: 1519px;

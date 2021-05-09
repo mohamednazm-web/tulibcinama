@@ -4,21 +4,21 @@ block content
     include _placeOfImage
     section.posterOne
         .posterOne__title(href="#")
-            p چەمکەکان
+            p.top_title_poster چەمکەکان
         .posters
 
             each poster in chamkakan
                 .poster_container_nice
                     .card_poster_nice
                         
-                        .img1(style=`background-image:url(${poster.idPoster});`)
+                        a(href=`/movies/${poster.slug}`).img1(style=`background-image:url(${poster.idPoster});`)
                         //.img2(style=`background-image:url(${poster.idPoster});`)
-                        .text= poster.description
+                        a(href=`/movies/${poster.slug}`).text= poster.description
                         a(href=`/movies/${poster.slug}`)
                             .catagory Consepts
                                 i.fas.fa-film
                         a(href=`/movies/${poster.slug}`)
                             .views= poster.hasViewd
                                 i.far.fa-eye
-                    .card_poster_other
+                    a(href=`/movies/${poster.slug}`).card_poster_other
                         p.poster__titleFilm= poster.title
