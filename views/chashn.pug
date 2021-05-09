@@ -7,7 +7,7 @@ block content
             p.top_title_poster چەشنەکان
         .posters
 
-            each poster in chamkakan
+            each poster in chashn
                 .poster_container_nice
                     .card_poster_nice
                         
@@ -15,7 +15,7 @@ block content
                         //.img2(style=`background-image:url(${poster.idPoster});`)
                         a(href=`/movies/${poster.slug}`).text= poster.description
                         a(href=`/movies/${poster.slug}`)
-                            .catagory Consepts
+                            .catagory چەشنەکان
                                 i.fas.fa-film
                         a(href=`/movies/${poster.slug}`)
                             .views= poster.hasViewd
