@@ -217,7 +217,9 @@ exports.getFilm = catchAsync(async (req, res, next) => {
     typeFilm: {
       $eq: 'film'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('film', {
     title: 'film page',
@@ -230,7 +232,9 @@ exports.getTop = catchAsync(async (req, res, next) => {
     typeTop: {
       $eq: 'top'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('top', {
     title: 'Top 250 movie rated',
@@ -245,10 +249,13 @@ exports.getVariety = catchAsync(async (req, res, next) => {
     }
   }).sort({ _id: -1 });
 
-  res.status(200).render('variety', {
-    title: 'variety',
-    variety
-  });
+  res
+    .status(200)
+    .render('variety', {
+      title: 'variety',
+      variety
+    })
+    .limit(120);
 });
 
 exports.getDirector = catchAsync(async (req, res, next) => {
@@ -256,7 +263,9 @@ exports.getDirector = catchAsync(async (req, res, next) => {
     typeDirector: {
       $eq: 'director'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('director', {
     title: 'director',
@@ -269,7 +278,9 @@ exports.getCompany = catchAsync(async (req, res, next) => {
     typeCompany: {
       $eq: 'company'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('company', {
     title: 'company',
@@ -282,7 +293,9 @@ exports.getGift = catchAsync(async (req, res, next) => {
     typeGift: {
       $eq: 'gift'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('gift', {
     title: 'gift',
@@ -295,7 +308,9 @@ exports.getChashn = catchAsync(async (req, res, next) => {
     typeChashn: {
       $eq: 'chashn'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('chashn', {
     title: 'chashn',
@@ -308,7 +323,9 @@ exports.getSeries = catchAsync(async (req, res, next) => {
     typeSeries: {
       $eq: 'series'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('series', {
     title: 'series',
@@ -321,7 +338,9 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
     typeChamkakan: {
       $eq: 'chamkakan'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('chamkakan', {
     title: 'chamkakan',
@@ -334,7 +353,9 @@ exports.getActor = catchAsync(async (req, res, next) => {
     typeActor: {
       $eq: 'actor'
     }
-  }).sort({ _id: -1 });
+  })
+    .sort({ _id: -1 })
+    .limit(120);
 
   res.status(200).render('actor', {
     title: 'actor',
