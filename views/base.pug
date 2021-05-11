@@ -62,7 +62,7 @@ html
                 | ئۆنڵاینەکانمان بریتییە لە کارکردنی ڕۆژانە لە پێگەکانمان  کە بریتین لە وێبسایتێک
                 | و پەیجێکی فەیسووک بۆ شیکردنەوە، هەواڵ، زانیاری، فاکت و هتد.
             .holder-up__Categories
-              h6.holder-up__title 
+              h6.holder-up__title
               ul.holder-up__links
                 li
                   a.holder-up__links-tag(href="#") 
@@ -131,9 +131,11 @@ html
           li
             a(href="/") سەرەتا
       #cd-search.cd-search
-        form
-          input#search.form-control.form-control-lg(type="text" placeholder="...گەڕان")
+        form(action="/search" method="get")
+          input#search.form-control.form-control-lg(type="text" name="dsearch"  placeholder="...گەڕان")
           #match-list.searchContainer
+          button.searchButton(type='submit')
+            i.fa.fa-search
       script(src="/js/search.js")
       script(src="/js/jquery-2.1.1.js")
       script(src="/js/jquery.mobile.custom.min.js")

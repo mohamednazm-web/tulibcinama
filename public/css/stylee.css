@@ -1958,6 +1958,31 @@ support for no js
   font-weight: bold;
   letter-spacing: 0.5px;
 }
+
+.searchButton {
+  width: 96px;
+  height: 119px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .searchButton {
+    width: 49px;
+    height: 50px;
+    top: 0;
+    right: 2px;
+  }
+}
+
 /*
 desktop
 width: 1519px;

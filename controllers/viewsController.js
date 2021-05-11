@@ -353,6 +353,21 @@ exports.createPoster = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.search = catchAsync(async (req, res, next) => {
+  const regex = new RegExp(`${req.query.dsearch}`, 'gi');
+  const searchFor = req.query.dsearch;
+  const findRes = await AllPosters.find({
+    title: { $regex: regex }
+  }).limit(14);
+
+  console.log(findRes);
+
+  res.status(200).render('allPosters', {
+    title: 'all',
+    all: findRes,
+    search: searchFor
+  });
+});
 // to change your remote to other existing remote using this steps
 // git remote -v
 // git remote set-url origin https://github.com/mohamednazm-web/tulibcinama.git

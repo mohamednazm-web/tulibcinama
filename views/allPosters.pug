@@ -4,17 +4,17 @@ block content
     include _placeOfImage
     section.posterOne
         .posterOne__title(href="#")
-            p.top_title_poster هەموو
+            p.top_title_poster= `${search} :ئەنجامی گەڕان بۆ`
         .posters
             each poster in all
                 .poster_container_nice
                     .card_poster_nice
-                        
+
                         .img1(style=`background-image:url(${poster.idPoster});`)
                         //.img2(style=`background-image:url(${poster.idPoster});`)
                         a(href=`/movies/${poster.slug}`).text= poster.description
                         a(href=`/movies/${poster.slug}`)
-                            .catagory Consepts
+                            .catagory Film
                                 i.fas.fa-film
                         a(href=`/movies/${poster.slug}`)
                             //.views= poster.hasViewd
