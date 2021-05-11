@@ -1889,7 +1889,7 @@ support for no js
 @media only screen and (max-width: 424px) {
   .card_poster_nice {
     width: 189px;
-    margin-left: -6px;
+    margin-left: -6.8px;
   }
   .card_poster_nice .img1 {
     background-size: 176px 305px;
