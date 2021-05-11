@@ -247,15 +247,14 @@ exports.getVariety = catchAsync(async (req, res, next) => {
     typeVariety: {
       $eq: 'variety'
     }
-  }).sort({ _id: -1 });
-
-  res
-    .status(200)
-    .render('variety', {
-      title: 'variety',
-      variety
-    })
+  })
+    .sort({ _id: -1 })
     .limit(120);
+
+  res.status(200).render('variety', {
+    title: 'variety',
+    variety
+  });
 });
 
 exports.getDirector = catchAsync(async (req, res, next) => {
