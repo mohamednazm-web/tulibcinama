@@ -347,9 +347,9 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getLogin = catchAsync(async (req, res, next) => {
-  res.status(200).render('login', {
-    title: 'hello'
+exports.getFormProfile = catchAsync(async (req, res, next) => {
+  res.status(200).render('profileForm', {
+    title: 'profileForm'
   });
 });
 

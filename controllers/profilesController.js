@@ -5,13 +5,39 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 exports.createNewProfile = catchAsync(async (req, res, next) => {
-  const doc = await Profile.create(req.body);
+  const newMember = {
+    m: req.body.m,
+    memberName: req.body.memberName,
+    memberNameEnglish: req.body.memberNameEnglish,
+    description: req.body.description,
+    imageProfile: req.body.imageProfile,
+    numOfPosters: req.body.numOfPosters
+  };
 
-  res.status(201).json({
-    status: 'success',
-    data: {
-      data: doc
-    }
+  // const findMember = await Profile.find({});
+  // const existing = findMember.filter(
+  //   member => member.memberName === req.body.memberName
+  // );
+  // if (existing) {
+  //   return next(new AppError('that member is exist', 404));
+  // }
+
+  const doc = await Profile.create(newMember);
+  // res.status(201).json({
+  //   status: 'success',
+  //   data: {
+  //     data: doc
+  //   }
+  // });
+
+  // res.status(201).json({
+  //   status: 'success',
+  //   data: {
+  //     data: doc
+  //   }
+  // });
+  res.status(200).render('succesfull', {
+    mProfile: doc
   });
 });
 

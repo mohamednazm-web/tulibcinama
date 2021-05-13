@@ -117,6 +117,7 @@ app.use((req, res, next) => {
 */
 
 app.use('/', viewRouter);
+app.use('/', profileRouter);
 
 app.use('/api/v1/posters', viewRouter);
 app.use('/api/v1', viewRouter);

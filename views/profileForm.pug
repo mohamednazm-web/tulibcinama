@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    block head
+     meta(charset='UTF-8')
+     title tulip cinema - سینەمای تولیپ
+     link(rel='stylesheet' href='/css/formProfile.css')
+     link(rel='shortcut icon' type='image/jpg' href='/img/logo.jpg')
+     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+     meta(name="mobile-web-app-capable" content="yes")
+     meta(name="apple-mobile-web-app-status-bar-style" content="black")
+     meta(name="description" content="کۆگایەک تایبەت بە نوسینی سینەمایی")
+     meta(name="format-detection" content="telephone=no")
+     meta(name="keywords" content="tulip cinema, tulip, tulipcinema, tulipcinama, cinema tulip, tulibcinema")
+     meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+     meta(name="HandheldFriendly" content="true")
+     meta(http-equiv="X-UA-Compatible" content="IE=edge")
+     meta(http-equiv="content-language" content="en")
+     meta(name="author" content="tulipcinema")
+     meta(property="og:site_name" content="tulipcinema.com")
+     meta(property="article:publisher" content="/tulipcinema")
+  body
+    .container
+      h1 tulipcinema.official
+      h2 creating new member
+      form(action='/createNewProfile' method="post")
+        label(for='fname') id
+        input#fname(type='number' name='m' placeholder='Enter only member number grater than 70')
+        label(for='lname') member Name
+        input#lname(type='text' name='memberName' placeholder='member Name..')
+        label(for='lname') memberNameEnglish
+        input#lname(type='text' name='memberNameEnglish' placeholder='memberNameEnglish..')
+        label(for='lname') imageProfile
+        input#lname(type='text' name='imageProfile' placeholder='imageProfile..')
+        label(for='num') numOfPosters
+        input#lname(type='number' name='numOfPosters' placeholder='numOfPosters..')
+        textarea#subject(name='description' placeholder='description' style='height:200px')
+        input(type='submit' value='Submit')

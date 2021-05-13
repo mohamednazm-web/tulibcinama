@@ -37,6 +37,6 @@ router.post('/createPoster', viewsController.createPoster);
 
 router.get('/search', viewsController.search);
 
-router.get('/login', viewsController.getLogin);
+router.get('/formProfile', viewsController.getFormProfile);
 
 module.exports = router;
