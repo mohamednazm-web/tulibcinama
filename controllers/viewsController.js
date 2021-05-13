@@ -197,19 +197,19 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
     return next(new AppError('There is no article with that name.', 404));
   }
 
-  res.status(200).json({
-    status: 'success',
-    results: mProfile.length,
-    data: {
-      mProfile
-    }
-  });
-
-  // res.status(200).render('posterEachMember', {
-  //   title: `${member.title} Poster`,
-  //   member,
-  //   mProfile
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: mProfile.length,
+  //   data: {
+  //     mProfile
+  //   }
   // });
+
+  res.status(200).render('posterEachMember', {
+    title: `${member.title} Poster`,
+    member,
+    mProfile
+  });
 });
 
 exports.getFilm = catchAsync(async (req, res, next) => {
