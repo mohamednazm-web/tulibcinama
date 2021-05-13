@@ -97,13 +97,13 @@ exports.updatedAllThings = catchAsync(async (req, res, next) => {
 
   const updatedProfile = await Profile.find({});
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: updatedProfile.length,
-  //   data: {
-  //     profile: updatedProfile
-  //   }
-  // });
+  res.status(200).json({
+    status: 'success',
+    results: updatedProfile.length,
+    data: {
+      profile: updatedProfile
+    }
+  });
 });
 
 exports.getArticle = catchAsync(async (req, res, next) => {
@@ -124,18 +124,18 @@ exports.getArticle = catchAsync(async (req, res, next) => {
     return next(new AppError('There is no article with that name.', 404));
   } // hello
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: article.length,
-  //   data: {
-  //     posters: article
-  //   }
-  // });
-
-  res.status(200).render('article', {
-    title: `${article.title} Poster`,
-    article
+  res.status(200).json({
+    status: 'success',
+    results: article.length,
+    data: {
+      posters: article
+    }
   });
+
+  // res.status(200).render('article', {
+  //   title: `${article.title} Poster`,
+  //   article
+  // });
 });
 
 exports.getProfiles = catchAsync(async (req, res, next) => {
@@ -161,21 +161,21 @@ exports.getProfiles = catchAsync(async (req, res, next) => {
     el => el.typeDeveloper === 'developer'
   );
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: filterProfile.length,
-  //   data: {
-  //     profile: filterProfile,
-  //     naxshandn: filterNaxshandn,
-  //     developer: filterDeveloper
-  //   }
-  // });
-  res.status(200).render('profile', {
-    title: `${profile.title} Poster`,
-    profile: filterProfile,
-    naxshandn: filterNaxshandn,
-    developer: filterDeveloper
+  res.status(200).json({
+    status: 'success',
+    results: filterProfile.length,
+    data: {
+      profile: filterProfile,
+      naxshandn: filterNaxshandn,
+      developer: filterDeveloper
+    }
   });
+  // res.status(200).render('profile', {
+  //   title: `${profile.title} Poster`,
+  //   profile: filterProfile,
+  //   naxshandn: filterNaxshandn,
+  //   developer: filterDeveloper
+  // });
 });
 
 exports.getPosterEachMember = catchAsync(async (req, res, next) => {
@@ -197,19 +197,19 @@ exports.getPosterEachMember = catchAsync(async (req, res, next) => {
     return next(new AppError('There is no article with that name.', 404));
   }
 
-  // res.status(200).json({
-  //   status: 'success',
-  //   results: mProfile.length,
-  //   data: {
-  //     mProfile
-  //   }
-  // });
-
-  res.status(200).render('posterEachMember', {
-    title: `${member.title} Poster`,
-    member,
-    mProfile
+  res.status(200).json({
+    status: 'success',
+    results: mProfile.length,
+    data: {
+      mProfile
+    }
   });
+
+  // res.status(200).render('posterEachMember', {
+  //   title: `${member.title} Poster`,
+  //   member,
+  //   mProfile
+  // });
 });
 
 exports.getFilm = catchAsync(async (req, res, next) => {
@@ -344,6 +344,12 @@ exports.getChamkakan = catchAsync(async (req, res, next) => {
   res.status(200).render('chamkakan', {
     title: 'chamkakan',
     chamkakan
+  });
+});
+
+exports.getLogin = catchAsync(async (req, res, next) => {
+  res.status(200).render('login', {
+    title: 'hello'
   });
 });
 

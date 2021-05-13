@@ -37,4 +37,6 @@ router.post('/createPoster', viewsController.createPoster);
 
 router.get('/search', viewsController.search);
 
+router.get('/login', viewsController.getLogin);
+
 module.exports = router;

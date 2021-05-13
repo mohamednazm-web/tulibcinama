@@ -17,6 +17,7 @@ const AppError = require('./utils/appError');
 //const reviewRouter = require("./routes/reviewRoutes");
 //const bookingRouter = require("./routes/bookingRoutes");
 const viewRouter = require('./routes/viewRoutes');
+const profileRouter = require('./routes/profileRoutes');
 
 // start express app
 const app = express();
@@ -119,6 +120,7 @@ app.use('/', viewRouter);
 
 app.use('/api/v1/posters', viewRouter);
 app.use('/api/v1', viewRouter);
+app.use('/api/v1/profile', profileRouter);
 
 //app.use("/api/v1/tours", tourRouter); // using this middle wear for this rout // after all of them is comes
 //app.use("/api/v1/users", userRouter);
