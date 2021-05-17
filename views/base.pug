@@ -7,8 +7,8 @@ html
      link(rel='stylesheet' href='/css/style.css')
      link(rel='stylesheet' href='/css/stylee.css')
      link(rel='stylesheet' href='/css/article.css')
-     link(rel='stylesheet' href='/css/profile.css')
-     link(rel='stylesheet' href='/css/memberProfile.css')
+     link(rel='stylesheet' href='/css/s.css')
+     link(rel='stylesheet' href='/css/members.css')
      link(rel='shortcut icon' type='image/jpg' href='/img/logo.jpg')
      meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
      meta(name="mobile-web-app-capable" content="yes")
@@ -52,62 +52,59 @@ html
       main.cd-main-content
         block content
           h2 hello
-        footer.footer
-          .holder-up
-            .holder-up__About
-              h6.holder-up__title سینەمای تولیپ
-              p.holder-up__paragraph.text-justify
-                | ڕێکخراوێکی سەربەخۆی ناحکومییە بەشێوەی مەیدانی و ئۆنڵاین لە بواری سینەمادا کاردەکات
-                | چالاکییە مەیدانییەکانمان بریتییە لە سیمینار، کۆڕ، پەخشکردنی فیلم، ناساندن و هتد...
-                | ئۆنڵاینەکانمان بریتییە لە کارکردنی ڕۆژانە لە پێگەکانمان  کە بریتین لە وێبسایتێک
-                | و پەیجێکی فەیسووک بۆ شیکردنەوە، هەواڵ، زانیاری، فاکت و هتد.
-            .holder-up__Categories
-              h6.holder-up__title
-              ul.holder-up__links
-                li
-                  a.holder-up__links-tag(href="#") 
-                li
-                  a.holder-up__links-tag(href="/director") دەرهێنەران
-                li
-                  a.holder-up__links-tag(href="/actor") نواندنکاران
-                li
-                  a.holder-up__links-tag(href="/Top-250-movie-rated") باشترین ٢٥٠ فیلم
-                li
-                  a.holder-up__links-tag(href="/company") کۆمپانیاکان
-                li
-                  a.holder-up__links-tag(href="/chamkakan") چەمکەکان
-            .holder-up__quick
-              h6.holder-up__title بەشەکانی وێبسایتی سینەمای تولیپ
-              ul.holder-up__links
-                li 
-                  a.holder-up__links-tag(href="/") سەرەتا
-                li
-                  a.holder-up__links-tag(href="/variety") هەمەجۆر
-                li
-                  a.holder-up__links-tag(href="/film") فیلم
-                li
-                  a.holder-up__links-tag(href="/series") زنجیرە
-                li
-                  a.holder-up__links-tag(href="/chashn") چەشنەکان
-          hr
-          .holder-down
-            p.holder-down__copyright
-              | Tulip Cinema © 2020 - 2021 All Rights Reserved
-            a.developer(href="https://web.facebook.com/mohamedmohamed.nazmnazm" title="join facebook") developed by Mohammed Nazm
-              
-            ul.holder-down__icons
-              .effect.lavinia
-                .buttons
-                  a.fb(href="https://www.facebook.com/Tulip.Cinema" title="Join us on Facebook")
-                    i.fa.fa-facebook(aria-hidden="true")
-                  a.insta(href="https://www.instagram.com/tulip.cinema/?igshid=b3p6uzyeofes" title="Join us on Instagram")
-                    i.fa.fa-instagram(aria-hidden="true")
+
+      footer.footer2.footer-distributed
+        .footer-left
+          //- img(src="/img/logo.jpg")
+          h3 Tulip
+            span Cinema
+          p.footer-links
+            a(href='/') سەرەتا
+            | |
+            a(href='/film') فیلم
+            | |
+            a(href='/series') زنجیرە
+            | |
+            a(href='/profiles') پرۆفایلەکان
+          p.footer-company-name Tulip Cinema © 2020 - 2021 All Rights Reserved.
+          p.footer-company-name
+            a.developer(href='https://www.facebook.com/mohamedmohamed.nazmnazm') developed by Mohammad Nazm.
+        .footer-center
+          //- div
+          //-   i.fa.fa-map-marker
+          //-   p
+          //-     span
+          //-       | 309 - Rupa Solitaire,
+          //-       | Bldg. No. A - 1, Sector - 1
+          //-     | Mahape, Navi Mumbai - 400710
+          div
+            i.fa.fa-phone
+            p +964 750 143 1759
+          div
+            i.fa.fa-envelope
+            p
+              a(href='mailto:tulipcinema2018@gmail.com') tulipcinema2018@gmail.com
+        .footer-right
+          p.footer-company-about
+            span سینەمای تولیپ
+            | ڕێکخراوێکی سەربەخۆی ناحکومییە بەشێوەی مەیدانی و ئۆنڵاین لە بواری سینەمادا کاردەکات.
+          .footer-icons
+            a(href='https://www.facebook.com/TulipCinema')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-instagram
+            a(href='#')
+              i.fa.fa-linkedin
+            a(href='#')
+              i.fa.fa-youtube
         .cd-overlay
       nav.cd-nav
         ul#cd-primary-nav.cd-primary-nav.is-fixed
 
           li
-            a(href="/profiles") پڕۆفایلەکان
+            a(href="/ss") پڕۆفایلەکان
           li
             a(href="/gift") خەڵاتەکان
           li

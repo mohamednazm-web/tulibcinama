@@ -927,8 +927,9 @@ hr.beautiful-line {
   }
 }
 
+/* add to sass*/
 .developer {
-  color: #869fb2;
+  color: #8f9296;
   text-decoration: underline;
 }
 
