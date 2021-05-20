@@ -3,7 +3,7 @@ extends base
 block content
     include _placeOfImage
     .swiper
-      .reklame
+      .reklame 
         a(href="https://www.facebook.com/Kurdish.social.media")
           img(src="/img/socialMediaGroup.png" alt="" loading="lazy")
       .slider
@@ -11,7 +11,7 @@ block content
           input#radio1(type="radio" name="radio-btn")
           input#radio2(type="radio" name="radio-btn")
           input#radio3(type="radio" name="radio-btn")
-          //input#radio4(type="radio" name="radio-btn")
+          input#radio4(type="radio" name="radio-btn")
           .slide.first
             a(href="https://www.facebook.com/Tulip.Cinema")
               img(src="img/swiper1.jpg" alt="" loading="lazy")
@@ -21,19 +21,19 @@ block content
           .slide
            a(href="https://www.facebook.com/Tulip.Cinema" loading="lazy")
              img(src="img/swiper3.jpg" alt="")
-          //- .slide
-          //-  a(href="https://www.facebook.com/Tulip.Cinema" loading="lazy")
-          //-    img(src="img/swiper4.jpg" alt="")
+          .slide
+           a(href="https://www.facebook.com/Tulip.Cinema" loading="lazy")
+             img(src="img/swiper4.jpg" alt="")
           .navigation-auto
             .auto-btn1
             .auto-btn2
             .auto-btn3
-            //.auto-btn4
+            .auto-btn4
         .navigation-manual
           label.manual-btn(for="radio1")
           label.manual-btn(for="radio2")
           label.manual-btn(for="radio3")
-          //label.manual-btn(for="radio4")
+          label.manual-btn(for="radio4")
       script(src="js/swiper.js") type="text/javascript")
       .reklame-2
         a(href="https://www.facebook.com/memuzinlib")
