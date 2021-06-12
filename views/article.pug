@@ -12,6 +12,8 @@ block content
       article
         h1.headerArticle= ` ${article.nameF}`
         h1.headerArticle= `نوسینی: ${article.writingN}`
+        a.headerArticle(href='https://lh3.googleusercontent.com/rJp_hmu_8poCbKGJfV7QgCNNIxkyatm_ss3putBRYjXPV88K9Rui1oWEg-_8j6IocM8DL1Q3OBFtifLikP1xRJRcEpDZgD_6fI_0sWyDYnolHd-AugO17DJul5UykWOaVu7SwUcQQw=w2400' target="_blank" download)
+          i.fa.fa-download(aria-hidden='true')
         if article.translator
           h1.headerArticle(dir='rtl')= `وەرگێڕانی: ${article.translator}`
         if(typeof article.hasViewd === 'undefined' && article.hasViewd >= 200)
