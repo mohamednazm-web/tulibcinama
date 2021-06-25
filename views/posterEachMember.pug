@@ -10,7 +10,10 @@ block content
         //| back
         section(class='profile_container')
           div(class='profile_img_section')
-            img(class='profile_img-LG' src=`/${mProfile.imageProfileUpload}`)
+            if(mProfile.imageProfile)
+              img(class='profile_img-LG' src=`/images/profile/${mProfile.imageProfile}`)
+            else 
+              img(class='profile_img-LG' src=`/${mProfile.imageProfileUpload}`)
             //div(class='flag_wrapper')
               img.flag(src='/img/flag.jpg' alt='South Korean Flag')
           div(class='profile_desc_section')
