@@ -12,6 +12,8 @@ block content
       article
         h1.headerArticle= ` ${article.nameF}`
         h1.headerArticle= `نوسینی: ${article.writingN}`
+        a.headerArticle(href=`${article.idPoster}` target="_blank" download)
+          i.fa.fa-download(aria-hidden='true')
         if article.translator
           h1.headerArticle(dir='rtl')= `وەرگێڕانی: ${article.translator}`
         if(typeof article.hasViewd === 'undefined' && article.hasViewd >= 200)
