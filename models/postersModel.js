@@ -6,10 +6,6 @@ const posterSchema = new mongoose.Schema({
     type: String,
     unique: true
   },
-  p: {
-    type: Number,
-    unique: true
-  },
   typeFilm: {
     type: String
   },
@@ -75,7 +71,7 @@ posterSchema.index({
   slug: 1
 });
 
-posterSchema.pre('save', function(next) {
+posterSchema.pre('save', function (next) {
   // this keyword only access current document not others like query ...
   this.slug = slugify(this.title, {
     // you should install it // npm install slugify

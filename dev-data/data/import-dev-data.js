@@ -26,18 +26,19 @@ mongoose
 
 // READ JSON FILE
 
-const allPosters = JSON.parse(
-  fs.readFileSync(`${__dirname}/allPosters.json`, 'utf-8')
-);
+// const allPosters = JSON.parse(
+//   fs.readFileSync(`${__dirname}/allPosters.json`, 'utf-8')
+// );
+
 const profiles = JSON.parse(
   fs.readFileSync(`${__dirname}/profiles.json`, 'utf-8')
 );
 
-const calculate = JSON.parse(
-  fs.readFileSync(`${__dirname}/totalNumPoster.json`, 'utf-8')
-);
+// const calculate = JSON.parse(
+//   fs.readFileSync(`${__dirname}/totalNumPoster.json`, 'utf-8')
+// );
 
-const views = JSON.parse(fs.readFileSync(`${__dirname}/views.json`, 'utf-8'));
+//const views = JSON.parse(fs.readFileSync(`${__dirname}/views.json`, 'utf-8'));
 
 // IMPORT DATA INTO DB
 const importData = async () => {
@@ -47,9 +48,9 @@ const importData = async () => {
     //validateBeforeSave: false
     //});
     //await Review.create(reviews);
-    await AllPosters.create(allPosters);
+    //await AllPosters.create(allPosters);
     await Profile.create(profiles);
-    await Allcalculate.create(calculate);
+    //await Allcalculate.create(calculate);
     //await Allviews.create(views);
     //await Article.create(articles);
     console.log('Data successfully loaded!');
@@ -63,7 +64,7 @@ const importData = async () => {
 const deleteData = async () => {
   try {
     //await Article.deleteMany();
-    await AllPosters.deleteMany();
+    //await AllPosters.deleteMany();
     await Profile.deleteMany();
     console.log('Data successfully deleted!');
   } catch (err) {
@@ -153,9 +154,9 @@ const deleteData = async () => {
 
 // bo delete krdnw import krdn ema callyan nakayn balkw ba command line runyan dakean baw sheway xwarawa
 
-/*1.console.log(process.argv); bnusa 
+/*1.console.log(process.argv); bnusa
 2.bo fily xwendraw dabe ${__dirname} ben
-3.la xwarawa plusaka dagraw consoleki tr bkawa pashan awana bnusa 
+3.la xwarawa plusaka dagraw consoleki tr bkawa pashan awana bnusa
 // node .\dev-data\data\import-dev-data.js
 // node .\dev-data\data\import-dev-data.js --import
 // node .\dev-data\data\import-dev-data.js --delete

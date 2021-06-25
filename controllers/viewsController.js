@@ -97,13 +97,17 @@ exports.updatedAllThings = catchAsync(async (req, res, next) => {
 
   const updatedProfile = await Profile.find({});
 
-  res.status(200).json({
-    status: 'success',
-    results: updatedProfile.length,
-    data: {
-      profile: updatedProfile
-    }
-  });
+  if (updatedProfile) {
+    console.log('Update All Thing');
+    res.redirect('/profiles');
+  }
+  // res.status(200).json({
+  //   status: 'success',
+  //   results: updatedProfile.length,
+  //   data: {
+  //     profile: updatedProfile
+  //   }
+  // });
 });
 
 exports.getArticle = catchAsync(async (req, res, next) => {

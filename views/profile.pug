@@ -10,13 +10,19 @@ block content
             each p in developer
                 if p.description
                   a.pro(href=`/member/${p.slugMember}`)
-                    img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    if p.imageProfile
+                      img.pro__img(src=`/images/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    else
+                      img.pro__img(src=`/${p.imageProfileUpload}`, alt="" title="Join to his Facebook" loading="lazy")
                     .realtors__details
                       p.realkljtors__sold= p.memberName
                       h4.heading-4.heading-4--light= p.typeAction
                 else
                   a.pro(href=`${p.href}`)
-                    img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    if p.imageProfile
+                      img.pro__img(src=`/images/profile/${p.imageProfile}`, alt="" title="Join to his Facebook" loading="lazy")
+                    else 
+                      img.pro__img(src=`/${p.imageProfileUpload}`, alt="" title="Join to his Facebook" loading="lazy")
                     .realtors__details
                       p.realkljtors__sold= p.memberName
                       h4.heading-4.heading-4--light= p.typeAction
@@ -26,7 +32,10 @@ block content
         .pros
             each p in naxshandn
                 a.pro()
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="")
+                  if p.imageProfile
+                    img.pro__img(src=`/images/profile/${p.imageProfile}`, alt="")
+                  else 
+                    img.pro__img(src=`/${p.imageProfileUpload}`, alt="")
                   .realtors__details
                     p.realkljtors__sold= p.memberName
     section.profiles
@@ -35,7 +44,10 @@ block content
         .pros
             each p in profile
                 a.pro(href=`/member/${p.slugMember}`)
-                  img.pro__img(src=`/img/profile/${p.imageProfile}`, alt="")
+                  if p.imageProfile
+                    img.pro__img(src=`/images/profile/${p.imageProfile}`, alt="")
+                  else 
+                    img.pro__img(src=`/${p.imageProfileUpload}`, alt="")
                   .realtors__details
                     p.realkljtors__sold= p.memberName
                     h4.heading-4.heading-4--light= `(${p.numOfPosters}) ژمارەی بەرهەم`

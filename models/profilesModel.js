@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const posterSchema = new mongoose.Schema({
-  m: {
-    type: String,
-    unique: true
-  },
   memberName: {
     type: String,
     unique: true
@@ -30,6 +26,9 @@ const posterSchema = new mongoose.Schema({
   imageProfile: {
     type: String
   },
+  imageProfileUpload: {
+    type: String
+  },
   description: {
     type: String
   },
@@ -42,7 +41,7 @@ posterSchema.index({
   slugMember: 1
 });
 
-posterSchema.pre('save', function(next) {
+posterSchema.pre('save', function (next) {
   // this keyword only access current document not others like query ...
   this.slugMember = slugify(this.memberNameEnglish, {
     // you should install it // npm install slugify

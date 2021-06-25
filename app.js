@@ -22,25 +22,51 @@ const profileRouter = require('./routes/profileRoutes');
 // start express app
 const app = express();
 
+const fs = require("fs");
+const multer = require("multer");
+
+
+const fileStorage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    if (file.fieldname === "imageProfile") {
+      cb(null, 'images/profile');
+    }
+  },
+  filename: (req, file, cb) => {
+    if (file.fieldname === "imageProfile") {
+      cb(null, `${new Date().toISOString().replace(/:/g, '-')}${file.originalname}`);
+    }
+  }
+});
+
+const fileFilter = (req, file, cb) => {
+  if (file.mimetype === 'image/png' || file.mimetype === 'image/jpg' || file.mimetype === 'image/jpeg') {
+    cb(null, true)
+  } else {
+    cb(null, false)
+  }
+};
+
 app.enable('trust proxy');
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-// 1) Global Middleware
-// Implement CORS
 app.use(cors());
-// Access-Control-Allow-Origin *
-// api.natours.com, front-end natours.com
-/*app.use(cors({
-  origin: 'https://www.natours.com'
-}));*/
 
 app.options('*', cors());
-//app.options('/api/v1/tours/:id', cors());
 
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+app.use(multer({ storage: fileStorage, fileFilter: fileFilter }).fields([
+  {
+    name: 'imageProfile',
+    maxCount: 1
+  }
+]));
+
 
 //app.use(helmet());
 

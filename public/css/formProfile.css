@@ -1,6 +1,7 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type='text'],
 input[type='number'],
+input[type='file'],
 select,
 textarea {
   width: 100%; /* Full width */

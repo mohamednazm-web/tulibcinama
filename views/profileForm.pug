@@ -23,16 +23,20 @@ html
     .container
       h1 tulipcinema.official
       h2 creating new member
-      form(action='/createNewProfile' method="post")
-        label(for='fname') id
-        input#fname(type='number' name='m' placeholder='Enter only member number grater than 70')
+      form(action='/updateAllThings' method="get")
+        input(type='submit' value='UPDATE POSTER NUMBER')
+      hr
+      hr
+      hr
+      hr
+      form(action='/createNewProfile' method="post" enctype="multipart/form-data")
         label(for='lname') member Name
         input#lname(type='text' name='memberName' placeholder='member Name..')
-        label(for='lname') memberNameEnglish
-        input#lname(type='text' name='memberNameEnglish' placeholder='memberNameEnglish..')
-        label(for='lname') imageProfile
-        input#lname(type='text' name='imageProfile' placeholder='imageProfile..')
-        label(for='num') numOfPosters
-        input#lname(type='number' name='numOfPosters' placeholder='numOfPosters..')
+        label(for='imageProfile') member image
+        input#imageProfile(name='imageProfile' placeholder='IMAGE UPLOAD' type='file')
+        label(for='memberNameEnglish') memberNameEnglish
+        input#lname(type='text' name='memberNameEnglish' placeholder='karzan-taha')
         textarea#subject(name='description' placeholder='description' style='height:200px')
         input(type='submit' value='Submit')
+     
+      
