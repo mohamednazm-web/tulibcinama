@@ -12,12 +12,12 @@ block content
                         
                         .img1(style=`background-image:url(${poster.idPoster});`)
                         //.img2(style=`background-image:url(${poster.idPoster});`)
-                        a(href=`/movies/${poster.slug}`).text= poster.description
-                        a(href=`/movies/${poster.slug}`)
+                        a(href=`/movies/${poster._id}`).text= poster.description
+                        a(href=`/movies/${poster._id}`)
                             .catagory Actor
                                 i.fas.fa-film
-                        a(href=`/movies/${poster.slug}`)
+                        a(href=`/movies/${poster._id}`)
                             //.views= poster.hasViewd
                                 i.far.fa-eye
-                    a(href=`/movies/${poster.slug}`).card_poster_other
+                    a(href=`/movies/${poster._id}`).card_poster_other
                         p.poster__titleFilm= poster.title

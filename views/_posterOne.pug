@@ -1,6 +1,6 @@
 section.posterOne
     .posterOne__title(href="")
-        p.top_title_poster نوێترین فیلمەکان
+        p.top_title_poster  فیلمەکان
     .posters
 
         each poster in posterOne
@@ -9,12 +9,12 @@ section.posterOne
 
                         .img1(style=`background-image:url(${poster.idPoster});`)
                         //.img2(style=`background-image:url(${poster.idPoster});`)
-                        a(href=`/movies/${poster.slug}`).text= poster.description
-                        a(href=`/movies/${poster.slug}`)
+                        a(href=`/movies/${poster._id}`).text= poster.description
+                        a(href=`/movies/${poster._id}`)
                             .catagory Film
                                 i.fas.fa-film
-                        a(href=`/movies/${poster.slug}`)
+                        a(href=`/movies/${poster._id}`)
                             //.views= poster.hasViewd
                                 i.far.fa-eye
-                    a(href=`/movies/${poster.slug}`).card_poster_other
+                    a(href=`/movies/${poster._id}`).card_poster_other
                         p.poster__titleFilm= poster.title

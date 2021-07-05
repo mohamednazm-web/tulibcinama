@@ -113,7 +113,7 @@ exports.updatedAllThings = catchAsync(async (req, res, next) => {
 exports.getArticle = catchAsync(async (req, res, next) => {
   // 1) Get the data, for the requested tour (including reviews and guides)
   const article = await AllPosters.findOne({
-    slug: req.params.slug
+    _id: req.params.slug
   });
 
   // article has viewed
