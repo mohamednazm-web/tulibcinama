@@ -119,7 +119,7 @@ exports.getArticle = catchAsync(async (req, res, next) => {
   // article has viewed
   await AllPosters.updateOne(
     // find record with slug name
-    { slug: req.params.slug },
+    { _id: req.params.slug },
     // increment it's property called "ran" by 1
     { $inc: { hasViewd: 1 } }
   );
