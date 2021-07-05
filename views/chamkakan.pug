@@ -11,7 +11,8 @@ block content
                 .poster_container_nice
                     .card_poster_nice
                         
-                        .img1(style=`background-image:url(${poster.idPoster});`)
+                        if poster.idPoster
+                          .img1(style=`background-image:url(${poster.idPoster});`)
                         //.img2(style=`background-image:url(${poster.idPoster});`)
                         a(href=`/movies/${poster._id}`).text= poster.description
                         a(href=`/movies/${poster._id}`)

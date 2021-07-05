@@ -141,7 +141,6 @@ exports.getArticle = catchAsync(async (req, res, next) => {
     article
   });
 });
-////////
 exports.getProfiles = catchAsync(async (req, res, next) => {
   const profile = await Profile.find({}).sort({ numOfPosters: -1 });
   const filterProfile = profile.filter(
