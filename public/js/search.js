@@ -30,7 +30,7 @@ const outputHtml = matches => {
           }></img></a><a id="titleSearch" href="/movies/${match._id
             .toLowerCase()
             .split(' ')
-            .join('-')}">${match._id}<a/></h4>
+            .join('-')}">${match.title}<a/></h4>
         <small></small>
         </div>
         `
