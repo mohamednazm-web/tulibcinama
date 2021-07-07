@@ -12,8 +12,6 @@ exports.createNewProfile = catchAsync(async (req, res, next) => {
     imageProfileUpload: req.files['imageProfile'][0].path,
     numOfPosters: req.body.numOfPosters
   };
-
-
   // const findMember = await Profile.find({});
   // const existing = findMember.filter(
   //   member => member.memberName === req.body.memberName
@@ -21,17 +19,16 @@ exports.createNewProfile = catchAsync(async (req, res, next) => {
   // if (existing) {
   //   return next(new AppError('that member is exist', 404));
   // }
-
   const doc = await Profile.create(newMember);
-  // res.status(201).json({
-  //   status: 'success',
-  //   data: {
-  //     data: doc
-  //   }
-  // });
-  res.status(200).render('succesfull', {
-    mProfile: doc
+  res.status(201).json({
+    status: 'success',
+    data: {
+      data: doc
+    }
   });
+  // res.status(200).render('succesfull', {
+  //   mProfile: doc
+  // });
 });
 
 exports.deleteOneProfile = catchAsync(async (req, res, next) => {
