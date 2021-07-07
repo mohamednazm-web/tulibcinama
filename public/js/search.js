@@ -23,15 +23,14 @@ const outputHtml = matches => {
       .map(
         match => `
         <div class="matchTitle"> 
-        <h4><a href="/movies/${match.title
-          .toLowerCase()
-          .split(' ')
-          .join('-')}"><img id="imgSearch" src=${
-          match.idPoster
-        }></img></a><a id="titleSearch" href="/movies/${match.title
-          .toLowerCase()
-          .split(' ')
-          .join('-')}">${match.title}<a/></h4>
+        <h4><a href="/movies/${match._id
+            .toLowerCase()
+            .split(' ')
+            .join('-')}"><img id="imgSearch" src=${match.idPoster
+          }></img></a><a id="titleSearch" href="/movies/${match._id
+            .toLowerCase()
+            .split(' ')
+            .join('-')}">${match._id}<a/></h4>
         <small></small>
         </div>
         `
